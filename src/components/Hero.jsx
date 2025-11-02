@@ -1,7 +1,7 @@
 import React from 'react';
-import { RocketIcon, TruckIcon, PhoneIcon } from '../components/Icons';
+import { RocketIcon } from '../components/Icons';
 import { motion } from 'framer-motion'
-import { LayoutGridIcon, PlaySquare } from 'lucide-react';
+import { LayoutGridIcon} from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -39,20 +39,20 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto w-full px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-2 md:gap-12 items-center">
           {/* Left content */}
           <div className="space-y-8">
             {/* Main Heading */}
             <motion.div
-              className="space-y-4"
+              className="space-y-4 mb-0 md:mb-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              <h1 className="text-3xl font-extrabold leading-tight text-gray-800">
-                Transform The Way You <br />
+              <h1 className="text-lg md:text-3xl font-extrabold leading-tight text-gray-800">
+                Transform The Way You <br/>
                 <span
-                  className="italic text-5xl sm:text-6xl lg:text-7xl drop-shadow-lg"
+                  className="italic text-2xl md:text-5xl sm:text-6xl lg:text-7xl drop-shadow-lg"
                   style={{ color: 'rgb(87, 8, 133)' }}
                 >
                   Manage Fleet & Business
@@ -62,15 +62,15 @@ const Hero = () => {
 
             {/* Subheading */}
             <motion.div
-              className="space-y-3"
+              className="space-y-3  mb-2 md:mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              <p className="text-2xl sm:text-3xl font-bold" style={{ color: 'rgb(87, 8, 133)' }}>
+              <p className="text-[14px] md:text-2xl sm:text-3xl font-bold" style={{ color: 'rgb(87, 8, 133)' }}>
                 Less chaos. Improved efficiency.
               </p>
-              <p className="text-lg text-gray-600">
+              <p className="text-[14px] md:text-lg text-gray-600">
                 Manage trips, drivers, expenses and maintenance
               </p>
             </motion.div>
@@ -78,10 +78,11 @@ const Hero = () => {
             {/* Highlight: All in one app */}
             <motion.div
               initial={{ opacity: 0 }}
+              className='mb-2 md:mb-6'
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.6 }}
             >
-              <span className="inline-block font-extrabold text-3xl sm:text-4xl" style={{ color: 'rgb(87, 8, 133)' }}>
+              <span className="inline-block font-extrabold text-[24px] sm:text-3xl" style={{ color: 'rgb(87, 8, 133)' }}>
                 All in one app
               </span>
             </motion.div>
@@ -95,7 +96,7 @@ const Hero = () => {
             >
               <motion.a
                 href="https://app.lorio.in"
-                className="inline-flex items-center justify-center gap-3 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-xl"
+                className="inline-flex items-center justify-center gap-3 text-white font-bold p-2 md:py-4 md:px-8 rounded-xl text-[14px] sm:text-lg shadow-xl"
                 style={{ background: 'linear-gradient(135deg, rgb(87, 8, 133) 0%, #7c3aed 100%)' }}
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.98 }}
@@ -106,7 +107,7 @@ const Hero = () => {
 
               <motion.a
                 href="https://play.google.com/store/search?q=lorio&c=apps&hl=en_IN"
-                className="inline-flex items-center justify-center gap-3 font-semibold py-4 px-8 rounded-xl border-2 transition-all text-gray-800 bg-white hover:text-white"
+                className="inline-flex items-center justify-center gap-3 font-semibold  p-2 md:py-4 md:px-8 rounded-xl text-[14px] sm:text-lg border-2 transition-all text-gray-800 bg-white hover:text-white"
                 style={{ borderColor: 'rgb(87, 8, 133)' }}
                 whileHover={{ scale: 1.05, y: -2, backgroundColor: 'rgb(87, 8, 133)' }}
                 whileTap={{ scale: 0.98 }}
@@ -230,7 +231,7 @@ const Hero = () => {
 
             {/* Process Timeline below - matching reference */}
             <motion.div
-              className="mt-2 bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-xl border-2"
+              className="hidden md:block mt-2 bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-xl border-2"
               style={{ borderColor: 'rgba(87, 8, 133, 0.1)' }}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}

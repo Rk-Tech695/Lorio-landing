@@ -1,7 +1,6 @@
 import React from 'react'
-import { TruckIcon, CheckIcon, RocketIcon, PhoneIcon } from './Icons'
+import { TruckIcon } from './Icons'
 import { motion } from 'framer-motion'
-import { TrendingUp, User } from 'lucide-react'
 
 const SimplePricing = () => {
   const pricingPlans = [
@@ -20,7 +19,7 @@ const SimplePricing = () => {
   return (
     <section
       id="pricing"
-      className="relative overflow-hidden pt-10 pb-5"
+      className="relative overflow-hidden pt-5 pb-5"
       style={{ background: 'linear-gradient(135deg, #f9fafb 0%, #e5e7eb 50%, #f3e8ff 100%)' }}
     >
       {/* Decorative Background Elements */}
@@ -30,7 +29,7 @@ const SimplePricing = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4">
         {/* Header */}
         <motion.div 
-          className="text-center mb-16"
+          className="text-center mb-4 md:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -43,12 +42,12 @@ const SimplePricing = () => {
             </span>
             <div className="h-0.5 w-12" style={{ backgroundColor: 'rgb(87, 8, 133)' }}></div>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-3">Simple & Transparent Pricing</h2>
-          <p className="text-lg text-gray-600">Complete fleet management solution at an unbeatable price</p>
+          <h2 className="text-2xl lg:text-5xl font-bold text-gray-800 mb-3">Simple & Transparent Pricing</h2>
+          <p className="text-sm md:text-lg text-gray-600">Complete fleet management solution at an unbeatable price</p>
         </motion.div>
 
         {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-center justify-center max-w-6xl mx-auto mb-4 md:mb-16">
           {/* Left: Truck Image */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -76,15 +75,15 @@ const SimplePricing = () => {
               >
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
-                    <div className="text-3xl font-bold text-white">1300+</div>
+                    <div className="text-sm md:text-3xl font-bold text-white">1300+</div>
                     <div className="text-xs text-white/80 mt-1">Active Trucks</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-white">130+</div>
+                    <div className="text-sm md:text-3xl font-bold text-white">130+</div>
                     <div className="text-xs text-white/80 mt-1">Fleet Owners</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-yellow-400">30%</div>
+                    <div className="text-sm md:text-3xl font-bold text-yellow-400">30%</div>
                     <div className="text-xs text-white/80 mt-1">Cost Savings</div>
                   </div>
                 </div>
@@ -103,18 +102,18 @@ const SimplePricing = () => {
               <div key={plan.id} className="relative bg-white rounded-3xl shadow-2xl p-10 border-2" style={{ borderColor: 'rgb(87, 8, 133)' }}>
                 {/* Popular Badge */}
                 {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-8 py-2 rounded-full text-sm font-bold shadow-lg text-white" style={{ backgroundColor: 'rgb(87, 8, 133)' }}>
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-2 md:px-8 py-2 rounded-full text-[12px] md:text-sm font-bold shadow-lg text-white" style={{ backgroundColor: 'rgb(87, 8, 133)' }}>
                     🔥 Most Popular
                   </div>
                 )}
 
                 {/* Icon */}
                 <div className="text-center mb-6">
-                  <div className="mx-auto mb-4 rounded-2xl w-20 h-20 flex items-center justify-center shadow-lg" style={{ backgroundColor: 'rgb(87, 8, 133)' }}>
-                    <TruckIcon className="w-10 h-10 text-white" />
+                  <div className="mx-auto mb-4 rounded-2xl md:w-20 md:h-20 flex items-center justify-center shadow-lg" style={{ backgroundColor: 'rgb(87, 8, 133)' }}>
+                    <TruckIcon className="w-5 h-5 md:w-10 md:h-10 text-white" />
                   </div>
-                  <h3 className="text-3xl font-bold text-gray-900">{plan.name}</h3>
-                  <p className="text-gray-600 mt-2">{plan.description}</p>
+                  <h3 className="text-xl md:text-3xl font-bold text-gray-900">{plan.name}</h3>
+                  <p className="text-xs md:text-base text-gray-600 mt-2">{plan.description}</p>
                 </div>
 
                 {/* Pricing */}
@@ -130,11 +129,11 @@ const SimplePricing = () => {
                   <div className="relative z-10">
                     <div className="flex items-baseline justify-center gap-2 mb-2">
                       <span className="text-3xl font-bold" style={{ color: 'rgb(87, 8, 133)' }}>₹</span>
-                      <span className="text-7xl font-extrabold" style={{ color: 'rgb(87, 8, 133)' }}>{plan.price}</span>
-                      <span className="text-2xl text-gray-700">/{plan.period}</span>
+                      <span className="text-xl md:text-4xl font-extrabold" style={{ color: 'rgb(87, 8, 133)' }}>{plan.price}</span>
+                      <span className="text-sm lg:text-2xl text-gray-700">/{plan.period}</span>
                     </div>
-                    <p className="text-gray-700 font-medium mb-3">per truck • Billed Annually</p>
-                    <div className="inline-block bg-green-100 text-green-700 px-6 py-2 rounded-full font-bold border-2 border-green-300">
+                    <p className="text-[12px] md:text-base  text-gray-700 font-medium mb-3">per truck • Billed Annually</p>
+                    <div className="inline-block bg-green-100 text-green-700 px-6 py-2 rounded-full font-bold border-2 border-green-300 text-[12px] md:text-sm  ">
                       {plan.savings}
                     </div>
                   </div>

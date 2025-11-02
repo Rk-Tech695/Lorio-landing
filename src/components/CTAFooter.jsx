@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { PhoneIcon, ChatIcon } from '../components/Icons';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
 
@@ -26,7 +25,7 @@ const CTAFooter = () => {
   };
 
   return (
-    <section className="py-16 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #f9fafb 0%, #e5e7eb 50%, #f3e8ff 100%)' }}>
+    <section className="pt-10 pb-5 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #f9fafb 0%, #e5e7eb 50%, #f3e8ff 100%)' }}>
       {/* Decorative Background */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-purple-200/30 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl"></div>
@@ -34,7 +33,7 @@ const CTAFooter = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-4 md:mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -47,10 +46,10 @@ const CTAFooter = () => {
             </span>
             <div className="h-0.5 w-12" style={{ backgroundColor: 'rgb(87, 8, 133)' }}></div>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-3">
+          <h2 className="text-2xl lg:text-5xl font-bold text-gray-800 mb-3">
             Get in Touch with Us
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-[12px] md:text-lg text-gray-600 max-w-2xl mx-auto">
             Ready to transform your fleet management? We're here to help you get started.
           </p>
         </motion.div>
@@ -66,7 +65,7 @@ const CTAFooter = () => {
           >
             {/* Truck Image Card */}
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <div className="relative h-64">
+              <div className="relative h-56">
                 <img
                   src="https://plus.unsplash.com/premium_photo-1661963219843-f1a50a6cfcd3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
                   alt="Truck Fleet Management"

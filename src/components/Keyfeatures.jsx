@@ -87,7 +87,7 @@ const Keyfeatures = () => {
   ]
 
   return (
-    <section id="features" className="py-20 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #f9fafb 0%, #e5e7eb 50%, #f3e8ff 100%)' }}>
+    <section id="features" className="pt-10 pb-5 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #f9fafb 0%, #e5e7eb 50%, #f3e8ff 100%)' }}>
       {/* Decorative Background Elements */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-purple-200/30 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl"></div>
@@ -95,7 +95,7 @@ const Keyfeatures = () => {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Header */}
         <motion.div 
-          className="text-center mb-16"
+          className="text-center mb-5 md:mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -108,8 +108,8 @@ const Keyfeatures = () => {
             </span>
             <div className="h-0.5 w-12" style={{ backgroundColor: 'rgb(87, 8, 133)' }}></div>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-3">Key Features</h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <h2 className="text-2xl lg:text-5xl font-bold text-gray-800 mb-3">Key Features</h2>
+          <p className="text-gray-600 text-sm md:text-lg max-w-2xl mx-auto">
             Comprehensive solutions for every aspect of your fleet management needs
           </p>
         </motion.div>
@@ -143,14 +143,14 @@ const Keyfeatures = () => {
                   <span className="text-white font-bold text-lg">{String(feature.id).padStart(2, '0')}</span>
                 </motion.div>
 
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">{feature.title}</h3>
+                <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-1 md:mb-6">{feature.title}</h3>
 
                 {/* Feature list with animated checkmarks */}
                 <ul className="space-y-3">
                   {feature.features.map((item, idx) => (
                     <motion.li
                       key={idx}
-                      className="flex items-start gap-3"
+                      className="flex items-start gap-3 "
                       initial={{ opacity: 0, x: -10 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
@@ -161,7 +161,7 @@ const Keyfeatures = () => {
                           <Check className="text-white" size={14} strokeWidth={3} />
                         </div>
                       </div>
-                      <span className="text-gray-700 text-sm leading-relaxed">{item}</span>
+                      <span className="text-gray-700 text-sm leading-relaxed text-[12px] md:text-sm">{item}</span>
                     </motion.li>
                   ))}
                 </ul>

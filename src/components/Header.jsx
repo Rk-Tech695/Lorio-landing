@@ -17,15 +17,19 @@ const Header = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const offset = 80;
+      // Use a larger offset for mobile to account for sticky header
+      const isMobile = window.innerWidth < 1024;
+      const offset = isMobile ? 110 : 80;
       const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      
+      const offsetPosition = elementPosition + window.pageYOffset - 10;
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
       });
-      setIsMobileMenuOpen(false);
+      // Delay closing mobile menu to allow scroll to start
+      if (isMobileMenuOpen) {
+        setTimeout(() => setIsMobileMenuOpen(false), 400);
+      }
     }
   };
 
@@ -287,7 +291,7 @@ const Header = () => {
                 
                 {/* Mobile Pricing Button */}
                 <motion.button
-                  onClick={() => scrollToSection('pricing')}
+                  onClick={() => window.location.href = 'https://lorio.prfa.in'}
                   className="w-full py-4 px-4 rounded-xl font-bold text-white shadow-lg flex items-center justify-center gap-2 mt-4"
                   style={{ background: 'linear-gradient(135deg, rgb(87, 8, 133) 0%, #6d28d9 100%)' }}
                   initial={{ opacity: 0, y: 20 }}
@@ -295,11 +299,11 @@ const Header = () => {
                   transition={{ duration: 0.3, delay: 0.4 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <DollarSign size={20} />
-                  View Pricing
+                  <LogInIcon size={20} />
+                  Login
                 </motion.button>
               </div>
-            </motion.div>
+            </motion.div> 
           )}
         </AnimatePresence>
       </motion.header>

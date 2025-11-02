@@ -41,7 +41,7 @@ const ProblemSection = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%)' }}>
+    <section className="pt-5 pb-10 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%)' }}>
       {/* Decorative Background */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-purple-200/30 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl"></div>
@@ -49,7 +49,7 @@ const ProblemSection = () => {
       <div className="container mx-auto px-4 max-w-7xl relative z-10">
         {/* Header */}
         <motion.div 
-          className="text-center mb-16"
+          className="text-center mb-4 md:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -65,10 +65,10 @@ const ProblemSection = () => {
             </svg>
           </div>
           
-          <h2 className="text-5xl font-bold mb-2">
-            <span className="text-gray-800">Provide Efficient Logistics</span>
+          <h2 className="text-2xl md:text-5xl font-bold mb-2">
+            <span className="text-gray-800">Providing Efficient</span>
             <br />
-            <span className="text-gray-800">Solutions <span style={{ color: 'rgb(87, 8, 133)' }}>BUSINESS</span></span>
+            <span className="text-gray-800">Business Solutions For <span style={{ color: 'rgb(87, 8, 133)' }}>LOGISTICS</span></span>
           </h2>
         </motion.div>
 
@@ -100,7 +100,7 @@ const ProblemSection = () => {
                   >
                     <Icon className="w-5 h-5 text-white" strokeWidth={2} />
                   </motion.div> */}
-                     <h3 className="text-2xl font-bold text-gray-800 mb-6">
+                     <h3 className="text-md md:text-2xl font-bold text-gray-800 mb-6">
                     {service.title}
                   </h3>
 
@@ -125,7 +125,7 @@ const ProblemSection = () => {
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                         </div>
-                        <span className="text-gray-700 leading-relaxed">
+                        <span className="text-gray-700 leading-relaxed text-[12px] md:text-sm">
                           {point}
                         </span>
                       </motion.li>

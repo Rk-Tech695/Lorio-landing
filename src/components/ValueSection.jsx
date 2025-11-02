@@ -1,6 +1,5 @@
 import React from 'react';
-import { CheckIcon } from '../components/Icons';
-import { TrendingUp, Users, Truck, DollarSign, Clock, Award, BarChart3, Zap } from 'lucide-react';
+import { TrendingUp, DollarSign, BarChart3, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const ValueSection = () => {
@@ -59,7 +58,7 @@ const ValueSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <motion.div 
-          className="text-center mb-12"
+          className="text-center mb-4 md:mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -72,7 +71,7 @@ const ValueSection = () => {
             </span>
             <div className="h-0.5 w-12" style={{ backgroundColor: 'rgb(87, 8, 133)' }}></div>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-2xl lg:text-5xl font-bold text-gray-800 mb-4">
             Because Your Fleet Deserves Smart Management
           </h2>
         </motion.div>
@@ -101,10 +100,10 @@ const ValueSection = () => {
                     <Icon className="text-white" size={24} strokeWidth={2.5} />
                   </motion.div>
                   <div className="flex-1">
-                    <h3 className="text-lg font-bold text-gray-800 mb-2">
+                    <h3 className="text-sm md:text-lg font-bold text-gray-800 mb-2">
                       {benefit.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-[12px] md:text-sm leading-relaxed">
                       {benefit.description}
                     </p>
                   </div>
@@ -122,9 +121,9 @@ const ValueSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="text-center mb-10">
+          <div className="text-center mb-3 md:mb-10">
             <motion.h2 
-              className="text-4xl lg:text-5xl font-bold mb-4"
+              className="text-xl md:text-4xl lg:text-5xl font-bold mb-1 md:mb-4"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -133,11 +132,11 @@ const ValueSection = () => {
               <span className="text-gray-800">Trusted. </span>
               <span style={{ color: 'rgb(87, 8, 133)' }}>Growing.</span>
             </motion.h2>
-            <p className="text-lg text-gray-600">Join thousands of truck owners who trust Lorio</p>
+            <p className="text-sm md:text-lg text-gray-600">Join thousands of truck owners who trust Lorio</p>
           </div>
 
           {/* Stats Grid - Clean Modern Design */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-3 md:mb-10">
             {socialProofStats.map((stat, index) => (
               <motion.div
                 key={index}
@@ -153,7 +152,7 @@ const ValueSection = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <div 
-                    className={`text-3xl  font-bold mb-2 ${stat.color}`}
+                    className={`text-lg md:text-3xl  font-bold mb-2 ${stat.color}`}
                   >
                     {stat.number}
                   </div>
@@ -164,7 +163,7 @@ const ValueSection = () => {
                                    '#ea580c'
                   }}></div>
                 </motion.div>
-                <p className="text-gray-700 font-medium text-base">
+                <p className="text-gray-700 font-medium text-[12px] md:text-base">
                   {stat.label}
                 </p>
               </motion.div>
