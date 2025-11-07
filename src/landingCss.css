@@ -78,6 +78,9 @@
   pointer-events: none;
 }
 
+.slick-dots{
+  bottom: -5px !important;
+}
 /* ===== Animated Elements ===== */
 .mascot-float {
   animation: float 6s ease-in-out infinite;

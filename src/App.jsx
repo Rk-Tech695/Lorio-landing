@@ -16,6 +16,7 @@ import TermsAndConditions from './components/TermsAndConditions';
 import './index.css'
 import PolicyPage from './components/PolicyPage';
 import LandingPage from './components/LandingPage';
+import ThankYou from './components/ThankYou';
 function App() {
   return (
     <BrowserRouter>
@@ -88,6 +89,7 @@ function App() {
           <Route path="/terms-conditions" element={<TermsAndConditions />} />
           <Route path="/privacy-policy" element={<PolicyPage />} />
           <Route path="/fleet-management" element={<LandingPage />} />
+          <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
 
       </div>

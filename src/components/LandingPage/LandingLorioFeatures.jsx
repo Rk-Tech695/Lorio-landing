@@ -142,7 +142,7 @@ const LandingLorioFeatures = () => {
   }, []);
 
   const sliderSettings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 800,
     slidesToShow,

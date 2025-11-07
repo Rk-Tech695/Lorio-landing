@@ -149,7 +149,7 @@ const LandingFeatures = () => {
   }, []);
 
   const sliderSettings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 800,
     slidesToShow,
@@ -182,7 +182,7 @@ const LandingFeatures = () => {
             {features.map((feature) => {
               const Icon = feature.icon;
               return (
-                <div key={feature.id} className="px-0 py-4">
+                <div key={feature.id} className="px-0 py-4" >
                   <div className="rounded-2xl shadow bg-white overflow-hidden border border-gray-100 h-full flex flex-col">
                     {/* Header */}
                     <div

@@ -107,12 +107,12 @@ const Hero = () => {
 
               <motion.a
                 href="https://play.google.com/store/search?q=lorio&c=apps&hl=en_IN"
-                className="inline-flex items-center justify-center gap-3 font-semibold  p-2 md:py-4 md:px-8 rounded-xl text-[14px] sm:text-lg border-2 transition-all text-gray-800 bg-white hover:text-white"
-                style={{ borderColor: 'rgb(87, 8, 133)' }}
-                whileHover={{ scale: 1.05, y: -2, backgroundColor: 'rgb(87, 8, 133)' }}
+                className="inline-flex items-center justify-center gap-3 font-semibold  p-2 md:py-4 md:px-8 rounded-xl text-[14px] sm:text-lg border-2 transition-all duration-[0.03s] bg-white hover:text-white"
+                
+                whileHover={{ scale: 1.05, y: -2, backgroundColor: 'rgb(87, 8, 133)', color: '#ffffff', borderColor: 'rgb(87, 8, 133)' }}
                 whileTap={{ scale: 0.98 }}
               >
-                <LayoutGridIcon className="w-6 h-6" style={{ color: 'rgb(87, 8, 133)' }} />
+                <LayoutGridIcon className="w-6 h-6" />
                 Get mobile App
               </motion.a>
             </motion.div>
