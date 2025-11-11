@@ -34,7 +34,7 @@ const handleSubmit = async (e) => {
   phone: formData.phone,
   owner_name: formData.company,
   city_or_district : formData.city,
-  fleet_size: `'${formData.fleetSize}'`, // ✅ add single quote to force text format
+  fleet_size: formData.fleetSize, // ✅ add single quote to force text format
   remarks: formData.message,
 };
 
@@ -160,18 +160,15 @@ const handleSubmit = async (e) => {
                     <label className="block font-semibold text-gray-700 text-xs mb-1">
                       Fleet Size
                     </label>
-                    <select
+                     <input
+                      type="text"
                       name="fleetSize"
                       value={formData.fleetSize}
                       onChange={handleChange}
                       className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-indigo-500"
-                    >
-                      <option value="">Select fleet size</option>
-                      <option value="1-5">1-5 trucks</option>
-                      <option value="6-15">6-15 trucks</option>
-                      <option value="16-50">16-50 trucks</option>
-                      <option value="50+">50+ trucks</option>
-                    </select>
+                      placeholder="Enter your fleet size"
+                      required
+                    />
                   </div>
 
                   <div className="md:col-span-2">

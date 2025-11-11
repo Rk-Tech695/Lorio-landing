@@ -37,9 +37,9 @@ function App() {
                   <ValueSection />
                 </div>
                 {/* <SocialProof /> */}
-                <div id="pricing">
+                {/* <div id="pricing">
                   <SimplePricing/>
-                </div>
+                </div> */}
                 {/* <PricingSection /> */}
                 {/* <RoadmapSection /> */}
                 <TestimonialsSection />
