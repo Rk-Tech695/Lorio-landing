@@ -1,78 +1,290 @@
 import React from 'react';
-import { RocketIcon, TruckIcon, PhoneIcon } from '../components/Icons';
+import { RocketIcon } from '../components/Icons';
+import { LayoutGridIcon } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-br from-lorio-primary via-purple-600 to-purple-800 min-h-screen flex items-center">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-white space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Revolutionize Your{' '}
-                <span className="text-yellow-300">Truck Business</span>
+    <section
+      className="flex overflow-hidden relative items-center pt-5 pb-10 min-h-screen"
+      style={{
+        background: 'linear-gradient(135deg, #f9fafb 0%, #e5e7eb 50%, #f3e8ff 100%)'
+      }}
+    >
+
+      {/* Decorative Background Elements */}
+      <div>
+        <img src="assets/images/transparent/home-bg.png" alt="logistics-bg" className='absolute bottom-[0] -left-[1%] opacity-[3%]' />
+      </div>
+      <div className="absolute left-10 top-20 w-72 h-72 rounded-full blur-3xl bg-purple-200/30"></div>
+      <div className="absolute right-10 bottom-20 w-96 h-96 rounded-full blur-3xl bg-purple-300/20"></div>
+
+      <div className="relative z-10 px-4 mx-auto w-full max-w-7xl">
+        <div className="grid gap-2 items-center lg:grid-cols-2 md:gap-12">
+
+          {/* Left content */}
+          <div className="space-y-8">
+
+            {/* Main Heading */}
+            <div
+              className="mb-0 space-y-4 md:mb-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h1 className="text-lg font-extrabold leading-tight text-gray-800 md:text-3xl">
+                Transform The Way You <br />
+                <span
+                  className="text-2xl italic drop-shadow-lg md:text-5xl sm:text-6xl lg:text-7xl"
+                  style={{ color: 'rgb(87, 8, 133)' }}
+                >
+                  Manage Fleet & Business
+                </span>
               </h1>
-              <h2 className="text-3xl lg:text-4xl font-semibold">
-                Drive More Profit. Less Chaos.
-              </h2>
-              <p className="text-xl text-purple-100 leading-relaxed">
-                No more registers. No more WhatsApp hassles.<br />
-                Track every truck, trip, driver, and rupee — all in one simple dashboard.
+            </div>
+
+            {/* Subheading */}
+            <div
+              className="mb-2 space-y-3 md:mb-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <p className="text-[14px] md:text-2xl sm:text-3xl font-bold" style={{ color: 'rgb(87, 8, 133)' }}>
+                Less chaos. Improved efficiency.
+              </p>
+              <p className="text-[14px] md:text-lg text-gray-600">
+                Manage trips, drivers, expenses and maintenance
               </p>
             </div>
-            
-            <button className="bg-yellow-400 hover:bg-yellow-300 text-purple-900 font-bold py-4 px-8 rounded-xl text-lg flex items-center gap-3 transition-all transform hover:scale-105 shadow-lg">
-              <RocketIcon />
-              🚀 Get started now
-            </button>
-          </div>
-          
-          <div className="relative">
-            {/* Phone mockup with dashboard preview */}
-            <div className="relative mx-auto w-80 h-96 bg-white rounded-3xl shadow-2xl overflow-hidden">
-              <div className="bg-lorio-primary h-8 rounded-t-3xl flex items-center justify-center">
-                <div className="w-16 h-1 bg-white rounded-full"></div>
-              </div>
-              
-              {/* Dashboard content */}
-              <div className="p-6 space-y-4">
-                <div className="flex items-center gap-3">
-                  <img src="https://via.placeholder.com/48x48/6366F1/white?text=L" alt="Lorio" className="rounded-full" />
-                  <h3 className="font-bold text-gray-800">Dashboard</h3>
+
+            {/* All In One */}
+            <div
+              className='mb-2 md:mb-6'
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <span className="inline-block font-extrabold text-[24px] sm:text-3xl" style={{ color: 'rgb(87, 8, 133)' }}>
+                All in one app
+              </span>
+            </div>
+
+            {/* CTA Buttons */}
+            <div
+              className="flex flex-col gap-4 sm:flex-row sm:items-center"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <a
+                href="https://app.lorio.in"
+                className="inline-flex items-center justify-center gap-3 text-white font-bold p-2 md:py-4 md:px-8 rounded-xl text-[14px] sm:text-lg shadow-xl transition-all hover:scale-105"
+                style={{ background: 'linear-gradient(135deg, rgb(87, 8, 133) 0%, #7c3aed 100%)' }}
+                data-aos="zoom-in"
+              >
+                <RocketIcon className="w-6 h-6" />
+                Get started now
+              </a>
+
+              <a
+                href="https://play.google.com/store/search?q=lorio&c=apps&hl=en_IN"
+                className="inline-flex items-center justify-center gap-3 font-semibold p-2 md:py-4 md:px-8 rounded-xl text-[14px] sm:text-lg border-2 bg-white hover:text-[#570885] hover:scale-105 transition-all"
+                style={{ borderColor: 'rgb(87, 8, 133)' }}
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <LayoutGridIcon className="w-6 h-6 ]" />
+                Get mobile App
+              </a>
+            </div>
+
+            {/* IIM Badge */}
+            <div
+              className="text-left transition"
+              data-aos="fade-up"
+              data-aos-delay="650"
+            >
+              <div className="flex gap-3 items-center transition-all hover:scale-105">
+                <div className="flex justify-center items-center w-10 h-10 bg-white rounded-full">
+                  <span className="text-sm font-bold" style={{ color: 'rgb(87, 8, 133)' }}>IIM</span>
                 </div>
-                
-                {/* Stats widgets */}
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-purple-50 p-4 rounded-lg">
-                    <div className="text-2xl font-bold text-purple-600">22</div>
-                    <div className="text-sm text-gray-600">Trips started</div>
-                  </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <div className="text-2xl font-bold text-green-600">18</div>
-                    <div className="text-sm text-gray-600">Trips completed</div>
-                  </div>
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-600">16</div>
-                    <div className="text-sm text-gray-600">POD received</div>
-                  </div>
-                  <div className="bg-orange-50 p-4 rounded-lg">
-                    <div className="text-2xl font-bold text-orange-600">3</div>
-                    <div className="text-sm text-gray-600">Reminders</div>
-                  </div>
-                </div>
-                
-                {/* Chart placeholder */}
-                <div className="bg-gray-100 h-20 rounded-lg flex items-center justify-center">
-                  <div className="text-gray-500">Performance Chart</div>
-                </div>
+                <span className="text-sm font-semibold text-purple-800 cp hover:underline">Incubated by IIM Visakhapatnam</span>
               </div>
             </div>
-            
-            {/* Person holding phone (placeholder) */}
-            <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg">
-              <img src="https://via.placeholder.com/120x120/4F46E5/white?text=👨‍💼" alt="Truck Owner" className="rounded-full" />
-            </div>
+
           </div>
+
+          {/* Right Side */}
+          <div
+            className="relative"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+
+            {/* Rotating Ring Container (Non-motion now static) */}
+            <div
+              className="absolute inset-0 rounded-full border-4 opacity-20"
+              style={{ borderColor: 'rgb(87, 8, 133)' }}
+            />
+            <div
+              className="absolute inset-8 rounded-full border-2 opacity-15"
+              style={{ borderColor: 'rgb(87, 8, 133)' }}
+            />
+
+            {/* Main visual card */}
+            <div
+              className="overflow-hidden relative rounded-3xl shadow-2xl"
+              style={{ background: 'linear-gradient(135deg, #E9D5FF 0%, #DDD6FE 50%, #E9D5FF 100%)' }}
+              data-aos="zoom-in"
+            >
+              <div className="relative z-10 p-6">
+                <img
+                  src="/assets/images/lorio/mainbg1.png"
+                  alt="Lorio Dashboard Analytics"
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
+            </div>
+
+            {/* Floating social icons */}
+            <div
+              className="absolute right-4 top-1/2 z-50 space-y-3 -translate-y-1/2"
+              data-aos="fade-left"
+              data-aos-delay="800"
+            >
+              {/* LinkedIn */}
+              <a
+                href="https://share.google/OPUPSbEAra0DzkTYR"
+                className="flex justify-center items-center w-12 h-12 bg-white rounded-full border-2 shadow-lg transition-all hover:scale-110"
+                style={{ borderColor: 'rgba(87, 8, 133, 0.2)', cursor: 'pointer' }}
+              >
+               
+                <img
+                  src="/assets/images/svg-icon/6.svg"
+                  alt="LinkedIn"
+                  className="w-5 h-5"
+                />
+              </a>
+              {/* Facebook */}
+              <a
+                href="https://share.google/Z7JsL9kpzSaX3tnvJ"
+                className="flex justify-center items-center w-12 h-12 bg-white rounded-full border-2 shadow-lg transition-all hover:scale-110"
+                style={{ borderColor: 'rgba(87, 8, 133, 0.2)' }}
+              >
+                
+                <img
+                  src="/assets/images/svg-icon/2.svg"
+                  alt="Facebook"
+                  className="w-5 h-5"
+                />
+              </a>
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/lorio.__?igsh=ZXY2eGc1Z2w5NXpw"
+                className="flex justify-center items-center w-12 h-12 bg-white rounded-full border-2 shadow-lg transition-all hover:scale-110"
+                style={{ borderColor: 'rgba(87, 8, 133, 0.2)' }}
+              >
+                
+                 <img
+                  src="/assets/images/svg-icon/4.svg"
+                  alt="LinkedIn"
+                  className="w-5 h-5"
+                />
+              </a>
+            </div>
+
+            {/* PROCESS TIMELINE */}
+            <div
+              className="hidden p-6 mt-2 rounded-2xl border-2 shadow-xl backdrop-blur-md md:block bg-white/90"
+              style={{ borderColor: 'rgba(87, 8, 133, 0.1)' }}
+              data-aos="fade-up"
+              data-aos-delay="1200"
+            >
+              <div className="grid relative grid-cols-5 gap-2">
+
+                {/* Connecting line */}
+                <div className="glow-line absolute top-8 left-0 right-0 h-0.5 opacity-30" />
+
+                {/* Step 1 */}
+                <div
+                  className="flex relative z-10 flex-col gap-3 items-center transition-all"
+                  data-aos="zoom-in"
+                  data-aos-delay="1200"
+                >
+                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl border-2 shadow-lg transition-all group hover:shadow-purple-500/50 hover:-translate-y-1 cp" style={{ borderColor: 'rgba(87, 8, 133, 0.1)' }}>
+                    <svg className="w-8 h-8" style={{ color: 'rgb(87, 8, 133)' }} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <span className="text-xs font-semibold text-center text-gray-700">Trip Created</span>
+                </div>
+
+                {/* Step 2 */}
+                <div
+                  className="flex relative z-10 flex-col gap-3 items-center transition-all"
+                  data-aos="zoom-in"
+                  data-aos-delay="1300"
+                >
+                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl border-2 shadow-lg transition-all group hover:shadow-purple-500/50 hover:-translate-y-1 cp" style={{ borderColor: 'rgba(87, 8, 133, 0.1)' }}>
+                    <svg className="w-8 h-8" style={{ color: 'rgb(87, 8, 133)' }} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                    </svg>
+                  </div>
+                  <span className="text-xs font-semibold text-center text-gray-700">Vehicle Loaded</span>
+                </div>
+
+                {/* Step 3 */}
+                <div
+                  className="flex relative z-10 flex-col gap-3 items-center transition-all"
+                  data-aos="zoom-in"
+                  data-aos-delay="1400"
+                >
+                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl border-2 shadow-lg transition-all group hover:shadow-purple-500/50 hover:-translate-y-1 cp" style={{ borderColor: 'rgba(87, 8, 133, 0.1)' }}>
+                    <svg className="w-8 h-8" style={{ color: 'rgb(87, 8, 133)' }} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-xs font-semibold text-center text-gray-700">Trip Completed</span>
+                </div>
+
+                {/* Step 4 */}
+                <div
+                  className="flex relative z-10 flex-col gap-3 items-center transition-all"
+                  data-aos="zoom-in"
+                  data-aos-delay="1500"
+                >
+                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl border-2 shadow-lg transition-all group hover:shadow-purple-500/50 hover:-translate-y-1 cp" style={{ borderColor: 'rgba(87, 8, 133, 0.1)' }}>
+                    <svg className="w-8 h-8" style={{ color: 'rgb(87, 8, 133)' }} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <span className="text-xs font-semibold text-center text-gray-700">POD Submitted</span>
+                </div>
+
+                {/* Step 5 */}
+                <div
+                  className="flex relative z-10 flex-col gap-3 items-center transition-all"
+                  data-aos="zoom-in"
+                  data-aos-delay="1600"
+                >
+                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl border-2 border-green-100 shadow-lg transition-all group hover:shadow-green-500/50 hover:-translate-y-1 cp">
+                    <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                    </svg>
+                  </div>
+                  <span className="text-xs font-semibold text-center text-gray-700">Freight Received</span>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Decorative floating element */}
+            <div
+              className="absolute -right-6 -bottom-6 w-32 h-32 rounded-full blur-2xl"
+              style={{ backgroundColor: 'rgba(87, 8, 133, 0.2)' }}
+              data-aos="zoom-in"
+              data-aos-delay="1700"
+              data-aos-duration="5000"
+            ></div>
+
+          </div>
+
         </div>
       </div>
     </section>
