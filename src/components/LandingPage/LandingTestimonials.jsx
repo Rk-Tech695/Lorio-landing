@@ -118,23 +118,23 @@ const LandingTestimonials = () => {
           data-aos-duration="1200"
           data-aos-delay="0"
         >
-          <div className="flex gap-3 justify-center items-center mb-4"
+          <div className="flex gap-2 justify-center items-center mb-4"
             data-aos="fade-up"
             data-aos-delay="200">
-            <div className="h-0.5 w-12" style={{ backgroundColor: "rgb(87, 8, 133)" }}></div>
-            <span className="font-semibold uppercase tracking-wider text-[11px]" style={{ color: "rgb(87, 8, 133)" }}>
-               <img src="assets/images/gif/start.gif" alt="star" />
-               Client Testimonials 
-               <img src="assets/images/gif/start.gif" alt="star" />
-            </span>
-            <div className="h-0.5 w-12" style={{ backgroundColor: "rgb(87, 8, 133)" }}></div>
+            <div className="h-0.5 w-12" style={{ backgroundColor: "#F68B1E" }}></div>
+            <div className=" flex items-center justify-center gap-2 font-semibold uppercase tracking-wider text-[11px] text-orange" >
+              <img src="assets/images/gif/start.gif" alt="star" width={'20px'}/>
+              Client Testimonials
+              <img src="assets/images/gif/start.gif" alt="star" width={'20px'}/>
+            </div>
+            <div className="h-0.5 w-12" style={{ backgroundColor: "#F68B1E" }}></div>
           </div>
 
           <h2 className="mb-1 text-2xl font-bold text-gray-800 md:text-5xl"
             data-aos="fade-up"
             data-aos-delay="400">
             Loved by Fleet Owners <br />
-            <span style={{ color: "rgb(87, 8, 133)" }}>Across India</span>
+            <span className="text-orange">Across India</span>
           </h2>
 
           <p className="text-gray-600 text-[12px] md:text-lg max-w-3xl mx-auto leading-relaxed"
@@ -160,13 +160,13 @@ const LandingTestimonials = () => {
                   data-aos-duration="1200"
                 >
                   <div className="relative bg-white rounded-xl p-6 border border-gray-200 shadow-md hover:shadow-xl transition-all duration-[1000ms] ease-[cubic-bezier(.25,.46,.45,.94)] h-full flex flex-col">
-                    <div className="flex justify-between items-center">
-                      <div className="flex justify-center items-center w-10 h-10 rounded-lg" style={{ background: t.iconColor }}>
+                    <div className="flex justify-between  items-center">
+                      <div className="flex justify-center items-center w-10 h-10 rounded-lg " >
                         <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                         </svg>
                       </div>
-                      <div className="flex gap-1 mb-3">
+                      <div className="flex gap-1 ">
                         {[...Array(t.rating)].map((_, i) => (
                           <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -181,12 +181,12 @@ const LandingTestimonials = () => {
 
                     <div className="flex gap-3 items-center pt-3 border-t border-gray-200">
                       <div className="flex justify-center items-center w-10 h-10 text-sm font-bold text-white rounded-full shrink-0"
-                        style={{ background: t.iconColor }}>
+                        style={{ background: "#1F6FBF" }}>
                         {t.initials}
                       </div>
                       <div>
                         <h4 className="text-sm font-bold text-gray-800">{t.author}</h4>
-                        <p className="text-xs text-gray-600">{t.title}</p>
+                        <p className="text-xs text-orange">{t.title}</p>
                       </div>
                     </div>
 

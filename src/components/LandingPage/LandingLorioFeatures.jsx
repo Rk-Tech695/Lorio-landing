@@ -9,65 +9,50 @@ const lorioFeatures = [
     title: "Document Management",
     icon: FolderOpen,
     iconSize: 20,
-    gradient: "linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%)",
-    bgGradient: "linear-gradient(135deg, #FFFFFF 0%, #F9FAFB 100%)",
     color: "#8B5CF6",
     description:
       "Store, organize, and access all vehicle documents digitally in one secure place. Share documents instantly with one click.",
     badges: ["Digital Storage", "Instant Sharing"],
-    badgeStyle: { background: "#F3F4F6", color: "#6B7280" },
   },
   {
     id: 2,
     title: "Driver Management",
     icon: Users,
     iconSize: 20,
-    gradient: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)",
-    bgGradient: "linear-gradient(135deg, #FFFFFF 0%, #FEF3C7 100%)",
     color: "#F59E0B",
     description:
       "Track driver performance, attendance, and maintain complete driver records effortlessly with real-time updates.",
     badges: ["Performance", "Attendance"],
-    badgeStyle: { background: "#FEF3C7", color: "#92400E" },
   },
   {
     id: 3,
     title: "Trip Management",
     icon: Truck,
     iconSize: 20,
-    gradient: "linear-gradient(135deg, #10B981 0%, #059669 100%)",
-    bgGradient: "linear-gradient(135deg, #FFFFFF 0%, #D1FAE5 100%)",
     color: "#10B981",
     description:
       "Plan, assign, and track every trip— from dispatch to delivery. Track every expense, trip earning, and trip-wise performance.",
     badges: ["Real-time", "Profitability"],
-    badgeStyle: { background: "#D1FAE5", color: "#065F46" },
   },
   {
     id: 4,
     title: "Tyre Management",
     icon: Target,
-    iconSize:20,
-    gradient: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)",
-    bgGradient: "linear-gradient(135deg, #FFFFFF 0%, #DBEAFE 100%)",
+    iconSize: 20,
     color: "#3B82F6",
     description:
       "Track tyre health, replacement schedules, and extend tyre life with smart monitoring and alerts.",
     badges: ["Health Tracking", "Alerts"],
-    badgeStyle: { background: "#DBEAFE", color: "#1E40AF" },
   },
   {
     id: 5,
     title: "Maintenance Management",
     icon: Wrench,
     iconSize: 20,
-    gradient: "linear-gradient(135deg, #EF4444 0%, #DC2626 100%)",
-    bgGradient: "linear-gradient(135deg, #FFFFFF 0%, #FEE2E2 100%)",
     color: "#EF4444",
     description:
       "Schedule services, track repairs, and never miss important maintenance deadlines with automated reminders.",
     badges: ["Scheduling", "Reminders"],
-    badgeStyle: { background: "#FEE2E2", color: "#991B1B" },
   },
 ];
 
@@ -188,7 +173,7 @@ const LandingLorioFeatures = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            Powerful <span style={{ color: "rgb(87, 8, 133)" }}>Features</span>
+            Powerful <span className="text-orange">Features</span>
           </motion.h2>
           <motion.p
             className="text-gray-600 text-[12px] md:text-lg max-w-3xl mx-auto leading-relaxed"
@@ -221,19 +206,14 @@ const LandingLorioFeatures = () => {
                       transition={{ duration: 0.3 }}
                     >
                       <div
-                        className="rounded-2xl shadow-md overflow-hidden border border-gray-100 h-full flex flex-col"
-                        style={{ background: feature.bgGradient }}
+                        className="rounded-2xl shadow-md overflow-hidden  border border-gray-100 h-full flex flex-col"
                       >
                         <div
-                          className="p-3 text-center relative"
-                          style={{ background: feature.gradient }}
+                          className="p-3 text-center relative fleet-bg-gradient"
                         >
                           <div
                             className="absolute inset-0 opacity-10 pointer-events-none"
-                            style={{
-                              background:
-                                "radial-gradient(circle at top right, rgba(255,255,255,0.5), transparent)",
-                            }}
+
                           ></div>
                           <div className="relative flex flex-col items-center">
                             <div
@@ -246,7 +226,7 @@ const LandingLorioFeatures = () => {
                             >
                               <IconComponent
                                 size={feature.iconSize}
-                                style={{ color: feature.color }}
+                                className="text-orange"
                               />
                             </div>
                             <h5 className="font-bold text-white mb-2 text-sm">
@@ -258,15 +238,16 @@ const LandingLorioFeatures = () => {
                           <p className="text-gray-600 mb-3 text-[12px] leading-relaxed">
                             {feature.description}
                           </p>
-                          <div className="flex justify-center gap-2 mt-auto">
+                          <div className="flex justify-center gap-2 mt-auto ">
                             {feature.badges.map((badge, i) => (
-                              <span
-                                key={i}
-                                className="rounded-full px-3 py-1 text-xs font-semibold"
-                                style={feature.badgeStyle}
-                              >
-                                {badge}
-                              </span>
+                              <div className=" rounded-full  fleet-bg-gradient-orange px-3 py-2">
+                                <p
+                                  key={i}
+                                  className=" text-xs font-semibold text-white"
+                                >
+                                  {badge}
+                                </p>
+                              </div>
                             ))}
                           </div>
                         </div>

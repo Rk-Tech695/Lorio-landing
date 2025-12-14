@@ -81,3 +81,31 @@ body {
 .gradient-lorio {
   background: linear-gradient(135deg, #E8F2FF 0%, #D6E9FF 100%);
 }
+
+.fleet-bg-gradient{
+  background: linear-gradient(135deg, #1F6FBF 0%, #1E40AF 100%);
+}
+
+.fleet-bg-gradient-orange {
+  background: linear-gradient(135deg, #F68B1E 0%, #EA580C 100%);
+}
+
+.btn-lorio {
+  background: linear-gradient(
+    135deg,
+    rgba(31, 111, 191, 1) 0%,
+    rgba(31, 111, 191, 0.85) 100%
+  );
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.btn-lorio:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(246, 139, 30, 1) 0%,
+    rgba(246, 139, 30, 0.85) 100%
+  );
+  box-shadow: 0 12px 25px rgba(246, 139, 30, 0.45);
+  transform: translateY(-2px);
+}

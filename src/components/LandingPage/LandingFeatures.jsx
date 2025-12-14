@@ -6,7 +6,6 @@ const features = [
   {
     id: 1,
     icon: BarChart3,
-    gradient: "bg-gradient-to-r from-indigo-500 to-purple-500",
     title: "Profit & Expense Reports",
     description:
       "Comprehensive tracking of expenses, fuel consumption, and profitability insights.",
@@ -16,12 +15,10 @@ const features = [
       "Fleet Cost Analysis",
       "Profitability Insights",
     ],
-    color: "#8B5CF6",
   },
   {
     id: 2,
     icon: Bell,
-    gradient: "bg-gradient-to-r from-yellow-400 to-orange-400",
     title: "Maintenance & Service Alerts",
     description:
       "Automated reminders for servicing, fitness, insurance, and renewals.",
@@ -31,12 +28,10 @@ const features = [
       "Insurance Renewals",
       "Maintenance Schedules",
     ],
-    color: "#F59E0B",
   },
   {
     id: 3,
     icon: FolderOpen,
-    gradient: "bg-gradient-to-r from-green-400 to-emerald-500",
     title: "Document Management",
     description:
       "Store and track all vehicle papers securely. Share instantly with one click.",
@@ -46,12 +41,10 @@ const features = [
       "One-Click Sharing",
       "Secure Access",
     ],
-    color: "#10B981",
   },
   {
     id: 4,
     icon: Truck,
-    gradient: "bg-gradient-to-r from-blue-500 to-indigo-500",
     title: "Driver Management",
     description:
       "Track driver attendance, trips, and payments — reducing disputes and improving efficiency.",
@@ -61,12 +54,10 @@ const features = [
       "Monitor driver behavior trends",
       "Encourage professionalism",
     ],
-    color: "#3B82F6",
   },
   {
     id: 5,
     icon: Settings,
-    gradient: "bg-gradient-to-r from-red-400 to-rose-500",
     title: "Tyre Management",
     description:
       "Track tyre usage, cost, and condition — maximize mileage and cut expenses.",
@@ -76,7 +67,6 @@ const features = [
       "Reduce wastage and early wear",
       "Lower maintenance costs",
     ],
-    color: "#EF4444",
   },
 ];
 
@@ -170,7 +160,7 @@ const LandingFeatures = () => {
       <div className="container mx-auto py-5 pb-0 px-4">
         <div className="text-center mb-2">
           <h2 className="text-2xl md:text-4xl font-bold mb-2 text-gray-800">
-            Benefits of <span className="text-indigo-600">Lorio</span>
+            Benefits of <span className="text-orange">Lorio</span>
           </h2>
           <p className="text-gray-500 text-[12px] md:text-base">
             Everything you need to manage your fleet efficiently
@@ -186,7 +176,8 @@ const LandingFeatures = () => {
                   <div className="rounded-2xl shadow bg-white overflow-hidden border border-gray-100 h-full flex flex-col">
                     {/* Header */}
                     <div
-                      className={`relative p-4 pb-2 text-center ${feature.gradient}`}
+                      className={`relative p-4 pb-2 text-center fleet-bg-gradient`}
+                      
                     >
                       <div
                         className="absolute inset-0 opacity-10 pointer-events-none"
@@ -195,12 +186,12 @@ const LandingFeatures = () => {
                             "radial-gradient(circle at top right, rgba(255,255,255,0.3), transparent)",
                         }}
                       />
-                      <div className="relative flex items-center gap-2">
+                      <div className="relative flex items-center  gap-2">
                         <div
                           className="bg-white rounded-full flex items-center justify-center mb-2 mt-2"
                           style={{ width: 26, height: 26 }}
                         >
-                          <Icon size={15} style={{ color: feature.color }} />
+                          <Icon size={15} className="text-orange"/>
                         </div>
                         <h5 className="text-white font-bold text-sm">
                           {feature.title}
@@ -227,20 +218,18 @@ const LandingFeatures = () => {
                               className="mb-1 flex items-start text-gray-500 text-xs"
                             >
                               <div
-                                className="bg-green-500 rounded-full flex items-center justify-center mr-2 flex-shrink-0"
+                                className=" flex items-center justify-center mr-2 flex-shrink-0"
                                 style={{
                                   width: 18,
                                   height: 18,
                                   minWidth: 18,
                                 }}
                               >
-                                <CheckCircle
-                                  size={12}
-                                  className="text-white"
+                                <img src="/assets/images/gif/check.gif"
                                   strokeWidth={3}
                                 />
                               </div>
-                              <span>{benefit}</span>
+                              <span >{benefit}</span>
                             </li>
                           ))}
                         </ul>

@@ -105,7 +105,7 @@ const handleSubmit = async (e) => {
                       name="fullName"
                       value={formData.fullName}
                       onChange={handleChange}
-                      className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-indigo-500"
+                      className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-[#1F6FBF]"
                       placeholder="Enter your name"
                       required
                     />
@@ -121,7 +121,7 @@ const handleSubmit = async (e) => {
                       value={formData.phone}
                       onChange={handleChange}
                       maxLength="10"
-                      className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-indigo-500"
+                      className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-[#1F6FBF]"
                       placeholder="Enter phone number"
                       required
                     />
@@ -136,7 +136,7 @@ const handleSubmit = async (e) => {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-indigo-500"
+                      className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-[#1F6FBF]"
                       placeholder="Enter company name"
                     />
                   </div>
@@ -150,7 +150,7 @@ const handleSubmit = async (e) => {
                       name="city"
                       value={formData.city}
                       onChange={handleChange}
-                      className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-indigo-500"
+                      className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-[#1F6FBF]"
                       placeholder="Enter your city"
                       required
                     />
@@ -165,7 +165,7 @@ const handleSubmit = async (e) => {
                       name="fleetSize"
                       value={formData.fleetSize}
                       onChange={handleChange}
-                      className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-indigo-500"
+                      className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-[#1F6FBF]"
                       placeholder="Enter your fleet size"
                       required
                     />
@@ -179,7 +179,7 @@ const handleSubmit = async (e) => {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-indigo-500"
+                      className="w-full rounded-lg border-2 border-gray-200 px-4 py-2 text-sm focus:outline-none focus:border-[#1F6FBF]"
                       rows={4}
                       placeholder="Tell us about your fleet management needs..."
                     />
@@ -190,7 +190,7 @@ const handleSubmit = async (e) => {
                   {isSubmitting ? (
                     <button
                       type="button"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold px-8 py-3 rounded-full shadow hover:from-indigo-600 hover:to-purple-600 transition-all text-sm cursor-not-allowed"
+                      className="inline-flex items-center gap-2 btn-lorio  text-white font-semibold px-8 py-3 rounded-full shadow btn-lorio:hover transition-all text-sm cursor-not-allowed"
                     >
                       <Loader className="animate-spin" size={20} />
                       <span>Submitting...</span>
@@ -198,7 +198,7 @@ const handleSubmit = async (e) => {
                   ) : (
                     <button
                       type="submit"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold px-8 py-3 rounded-full shadow hover:from-indigo-600 hover:to-purple-600 transition-all text-sm"
+                      className="inline-flex items-center gap-2 btn-lorio  text-white font-semibold px-8 py-3 rounded-full shadow btn-lorio:hover transition-all text-sm"
                     >
                       <Send className="-ml-1" size={20} />
                       <span>Request Free Demo</span>
