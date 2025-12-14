@@ -56,7 +56,6 @@ const testimonials = [
 
 const LandingTestimonials = () => {
   const sliderRef = useRef(null);
-
   const [slidesToShow, setSlidesToShow] = useState(3);
   const [centerMode, setCenterMode] = useState(false);
 
