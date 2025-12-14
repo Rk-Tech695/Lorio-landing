@@ -41,53 +41,6 @@ const TestimonialsSection = () => {
     }
   }, []);
 
-  // set initial value and add resize listener
-  useEffect(() => {
-    // guard for SSR
-    if (typeof window === "undefined") return;
-
-    // initial
-    applyWidthLogic(window.innerWidth);
-
-    // on resize (debounced)
-    const onResize = debounce(() => {
-      applyWidthLogic(window.innerWidth);
-
-      // force slick to recalc width after layout change
-      // small timeout ensures DOM updated
-      setTimeout(() => {
-        window.dispatchEvent(new Event("resize"));
-        if (sliderRef.current && sliderRef.current.innerSlider) {
-          try {
-            // slick internal method exists on some versions
-            sliderRef.current.innerSlider.onWindowResized();
-          } catch (e) {
-            // fallback: go to current slide to trigger re-render
-            sliderRef.current.slickGoTo(sliderRef.current.innerSlider.state.currentSlide || 0);
-          }
-        }
-      }, 80);
-    }, 120);
-
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-  }, [applyWidthLogic]);
-
-  // also trigger one recalculation after mount (some devices need it)
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    setTimeout(() => {
-      window.dispatchEvent(new Event("resize"));
-      if (sliderRef.current && sliderRef.current.innerSlider) {
-        try {
-          sliderRef.current.innerSlider.onWindowResized();
-        } catch (_) {
-          sliderRef.current.slickGoTo(sliderRef.current.innerSlider.state.currentSlide || 0);
-        }
-      }
-    }, 450);
-  }, []);
-
   const testimonials = [
     {
       quote:
@@ -100,7 +53,7 @@ const TestimonialsSection = () => {
     },
     {
       quote:
-        "My drivers are more disciplined now — payments and reports are all on time. The app has made everything so much easier.",
+        "My drivers are more disciplined now payments   and reports are all on time. The app has made everything so much easier.",
       author: "Ravinder Yadav",
       title: "Transporter",
       location: "Haryana",
@@ -109,7 +62,7 @@ const TestimonialsSection = () => {
     },
     {
       quote:
-        "Managing 15 trucks was becoming impossible. Lorio simplified everything - from trip tracking to expense management.",
+        "Managing 15 trucks was becoming impossible. Lorio simplified everything from trip tracking to expense management.",
       author: "Prakash Kumar",
       title: "Fleet Owner",
       location: "Punjab",
@@ -145,24 +98,36 @@ const TestimonialsSection = () => {
     },
   ];
 
-  // Build slider settings using current slidesToShow and centerMode
   const sliderSettings = {
     dots: false,
     infinite: true,
-    speed: 800,
-    slidesToShow: slidesToShow,
+    speed: 700,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
-    cssEase: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
     arrows: false,
     swipeToSlide: true,
-    touchThreshold: 10,
-    centerMode: centerMode,
-    centerPadding: centerMode ? "0px" : "0px",
-    // do not rely on responsive here - we control via state
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "0px",
+        },
+      },
+    ],
   };
+
 
   return (
     <section
@@ -193,13 +158,13 @@ const TestimonialsSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="h-0.5 w-12" style={{ backgroundColor: "rgb(87, 8, 133)" }}></div>
-            <span className="flex gap-3 items-center text-sm font-semibold tracking-wider uppercase" style={{ color: "rgb(87, 8, 133)" }}>
+            <div className="h-0.5 w-12" style={{ backgroundColor: "#F68B1E" }}></div>
+            <span className="flex gap-3 items-center text-sm font-semibold tracking-wider uppercase" style={{ color: "#F68B1E" }}>
               <img src="assets/images/gif/start.gif" alt="star" width={"20px"} />
               Client Testimonials
               <img src="assets/images/gif/start.gif" alt="star" width={"20px"} />
             </span>
-            <div className="h-0.5 w-12" style={{ backgroundColor: "rgb(87, 8, 133)" }}></div>
+            <div className="h-0.5 w-12" style={{ backgroundColor: "#F68B1E" }}></div>
           </motion.div>
 
           <motion.h2
@@ -211,7 +176,7 @@ const TestimonialsSection = () => {
           >
             Loved by Fleet Owners
             <br />
-            <span style={{ color: "rgb(87, 8, 133)" }}>Across India </span>
+            <span style={{ color: "#F68B1E" }}>Across India </span>
           </motion.h2>
 
           <motion.p
@@ -241,16 +206,16 @@ const TestimonialsSection = () => {
 
                       {/* Side image */}
                       <img
-                        src="/assets/images/banner-right-1.png"
+                        src="/assets/images/banner-right-2.png"
                         alt=""
                         className="absolute top-0 right-0 w-20 pointer-events-none select-none rounded-xl"
                       />
 
                       <div className="mb-4">
 
-                        <div className="flex justify-center items-center w-10 h-10 rounded-lg" style={{ backgroundColor: "rgb(87, 8, 133)" }}>
+                        <div className="flex justify-center items-center w-10 h-10 rounded-lg" style={{ backgroundColor: "" }}>
 
-                          <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-5 h-5 text-[#1F6FBF]" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                           </svg>
                         </div>
@@ -266,10 +231,10 @@ const TestimonialsSection = () => {
                         ))}
                       </div>
 
-                      <blockquote className="mb-4 text-sm leading-relaxed text-gray-700 grow">"{t.quote}"</blockquote>
+                      <blockquote className="mb-4 text-sm leading-relaxed  text-gray-700 grow">"{t.quote}"</blockquote>
 
                       <div className="flex gap-3 items-center pt-3 border-t border-gray-200">
-                        <div className="flex justify-center items-center w-10 h-10 text-sm font-bold text-white rounded-full shrink-0" style={{ backgroundColor: "rgb(87, 8, 133)" }}>
+                        <div className="flex justify-center items-center w-10 h-10 text-sm font-bold text-white rounded-full shrink-0" style={{ backgroundColor: "#1F6FBF" }}>
                           {t.initials}
                         </div>
                         <div>

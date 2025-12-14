@@ -53,7 +53,7 @@ body {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #7c3aed, transparent);
+  background: linear-gradient(90deg, transparent, #F68B1E, transparent);
   background-size: 200% 100%; /* important */
   animation: glowMove 3s linear infinite;
   opacity: 1;
@@ -68,3 +68,16 @@ body {
   }
 }
 
+
+/* Theme */
+.text-lorio{
+ color: #1F6FBF;
+}
+
+.text-orange{
+ color: #F68B1E;
+}
+
+.gradient-lorio {
+  background: linear-gradient(135deg, #E8F2FF 0%, #D6E9FF 100%);
+}

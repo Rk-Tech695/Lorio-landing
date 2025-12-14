@@ -11,9 +11,9 @@ const ProblemSection = () => {
         'Maintenance schedules, reducing manual tasks & improving response times'
       ],
       icon: Users,
-      iconBg: 'bg-linear-to-br from-purple-600 to-purple-900',
-      gradientFrom: 'from-purple-50',
-      gradientTo: 'to-purple-100'
+      iconBg: 'bg-linear-to-br from-blue-600 to-blue-900',
+      gradientFrom: 'from-blue-50',
+      gradientTo: 'to-blue-100'
     },
     {
       title: 'Improved Financial Visibility',
@@ -23,7 +23,7 @@ const ProblemSection = () => {
         'Revenue per truck or route, enabling smarter budgeting and strategic decision-making'
       ],
       icon: DollarSign,
-      iconBg: 'bg-linear-to-br from-purple-600 to-purple-900',
+      iconBg: 'bg-linear-to-br from-blue-600 to-blue-900',
       gradientFrom: 'from-blue-50',
       gradientTo: 'to-blue-100'
     },
@@ -35,9 +35,9 @@ const ProblemSection = () => {
         'Integrate new routes, vehicles, and drivers with minimal setup time and maximum control'
       ],
       icon: TrendingUp,
-      iconBg: 'bg-linear-to-br from-purple-600 to-purple-900',
-      gradientFrom: 'from-indigo-50',
-      gradientTo: 'to-indigo-100'
+      iconBg: 'bg-linear-to-br from-blue-600 to-blue-900',
+      gradientFrom: 'from-blue-50',
+      gradientTo: 'to-blue-100'
     }
   ];
 
@@ -53,8 +53,8 @@ const ProblemSection = () => {
       <img src="/assets/images/truck-2.png" alt=""  />
      </div>
       
-      <div className="absolute left-10 top-20 w-72 h-72 rounded-full blur-3xl bg-purple-200/30"></div>
-      <div className="absolute right-10 bottom-20 w-96 h-96 rounded-full blur-3xl bg-purple-300/20"></div>
+      <div className="absolute left-10 top-20 w-72 h-72 rounded-full blur-3xl bg-orange-100/30"></div>
+      <div className="absolute right-10 bottom-20 w-96 h-96 rounded-full blur-3xl bg-orange-200/20"></div>
       
       <div className="container relative z-10 px-4 mx-auto max-w-7xl">
 
@@ -64,12 +64,12 @@ const ProblemSection = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
         >
-          <div className="flex gap-3 justify-center items-center mb-4">
-            <div className="h-0.5 w-12" style={{ backgroundColor: 'rgb(87, 8, 133)' }}></div>
-            <span className="text-sm font-semibold tracking-wider uppercase" style={{ color: 'rgb(87, 8, 133)' }}>
+          <div className="flex gap-3 justify-center items-center mb-4 text-[#F68B1E]">
+            <div className="h-0.5 w-12 " style={{ backgroundColor: '#F68B1E' }}></div>
+            <span className="text-[#F68B1E] text-sm font-semibold tracking-wider uppercase">
               Our Service
             </span>
-            <svg className="w-5 h-5" style={{ color: 'rgb(87, 8, 133)' }} fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-[#F68B1E]"  fill="currentColor" viewBox="0 0 24 24">
               <path d="M21 12l-18 12v-24z"/>
             </svg>
           </div>
@@ -77,7 +77,7 @@ const ProblemSection = () => {
           <h2 className="mb-2 text-2xl font-bold md:text-5xl">
             <span className="text-gray-800">Providing Efficient</span>
             <br />
-            <span className="text-gray-800">Business Solutions For <span style={{ color: 'rgb(87, 8, 133)' }}>LOGISTICS</span></span>
+            <span className="text-gray-800">Business Solutions For <span className='text-[#F68B1E]'>LOGISTICS</span></span>
           </h2>
         </div>
 
@@ -88,7 +88,7 @@ const ProblemSection = () => {
             return (
               <div
                 key={index}
-                className={`bg-linear-to-br ${service.gradientFrom} ${service.gradientTo} rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-1000 ease-[cubic-bezier(.25,.46,.45,.94)] hover:-translate-y-2 group relative border border-purple-200`}
+                className={`bg-linear-to-br ${service.gradientFrom} ${service.gradientTo} rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-1000 ease-[cubic-bezier(.25,.46,.45,.94)] hover:-translate-y-2 group relative border border-blue-200`}
                 data-aos="fade-up"
                 data-aos-duration="1200"
                 data-aos-delay={index * 200}

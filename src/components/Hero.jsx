@@ -7,7 +7,7 @@ const Hero = () => {
     <section
       className="flex overflow-hidden relative items-center pt-5 pb-10 min-h-screen"
       style={{
-        background: 'linear-gradient(135deg, #f9fafb 0%, #e5e7eb 50%, #f3e8ff 100%)'
+        background: 'linear-gradient(135deg,  0%, #dee2e6 20%, #f3e8ff 100%)'
       }}
     >
 
@@ -15,8 +15,10 @@ const Hero = () => {
       <div>
         <img src="assets/images/transparent/home-bg.png" alt="logistics-bg" className='absolute bottom-[0] -left-[1%] opacity-[3%]' />
       </div>
-      <div className="absolute left-10 top-20 w-72 h-72 rounded-full blur-3xl bg-purple-200/30"></div>
-      <div className="absolute right-10 bottom-20 w-96 h-96 rounded-full blur-3xl bg-purple-300/20"></div>
+
+      <div className="absolute left-10 top-20 w-72 h-72 rounded-full blur-3xl bg-[#1F6FBF]/10"></div>
+      <div className="absolute right-10 bottom-20 w-96 h-96 rounded-full blur-3xl bg-[#1F6FBF]/10"></div>
+
 
       <div className="relative z-10 px-4 mx-auto w-full max-w-7xl">
         <div className="grid gap-2 items-center lg:grid-cols-2 md:gap-12">
@@ -33,8 +35,8 @@ const Hero = () => {
               <h1 className="text-lg font-extrabold leading-tight text-gray-800 md:text-3xl">
                 Transform The Way You <br />
                 <span
-                  className="text-2xl italic drop-shadow-lg md:text-5xl sm:text-6xl lg:text-7xl"
-                  style={{ color: 'rgb(87, 8, 133)' }}
+                  className=" text-lorio text-2xl italic drop-shadow-lg md:text-5xl sm:text-6xl lg:text-7xl"
+
                 >
                   Manage Fleet & Business
                 </span>
@@ -47,7 +49,9 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <p className="text-[14px] md:text-2xl sm:text-3xl font-bold" style={{ color: 'rgb(87, 8, 133)' }}>
+              <p className="text-[14px] md:text-2xl sm:text-3xl font-bold text-lorio"
+
+              >
                 Less chaos. Improved efficiency.
               </p>
               <p className="text-[14px] md:text-lg text-gray-600">
@@ -61,7 +65,7 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <span className="inline-block font-extrabold text-[24px] sm:text-3xl" style={{ color: 'rgb(87, 8, 133)' }}>
+              <span className="inline-block font-extrabold text-[24px] sm:text-3xl text-lorio" >
                 All in one app
               </span>
             </div>
@@ -75,7 +79,7 @@ const Hero = () => {
               <a
                 href="https://app.lorio.in"
                 className="inline-flex items-center justify-center gap-3 text-white font-bold p-2 md:py-4 md:px-8 rounded-xl text-[14px] sm:text-lg shadow-xl transition-all hover:scale-105"
-                style={{ background: 'linear-gradient(135deg, rgb(87, 8, 133) 0%, #7c3aed 100%)' }}
+                style={{ background: 'linear-gradient(135deg, #1F6FBF 0%, #1E40AF 100%)' }}
                 data-aos="zoom-in"
               >
                 <RocketIcon className="w-6 h-6" />
@@ -84,8 +88,8 @@ const Hero = () => {
 
               <a
                 href="https://play.google.com/store/search?q=lorio&c=apps&hl=en_IN"
-                className="inline-flex items-center justify-center gap-3 font-semibold p-2 md:py-4 md:px-8 rounded-xl text-[14px] sm:text-lg border-2 bg-white hover:text-[#570885] hover:scale-105 transition-all"
-                style={{ borderColor: 'rgb(87, 8, 133)' }}
+                className="inline-flex items-center justify-center gap-3 font-semibold p-2 md:py-4 md:px-8 rounded-xl text-[14px] sm:text-lg border-2 bg-white text-lorio hover:scale-101 transition-all"
+                style={{ borderColor: '#1F6FBF' }}
                 data-aos="zoom-in"
                 data-aos-delay="100"
               >
@@ -102,9 +106,9 @@ const Hero = () => {
             >
               <div className="flex gap-3 items-center transition-all hover:scale-105">
                 <div className="flex justify-center items-center w-10 h-10 bg-white rounded-full">
-                  <span className="text-sm font-bold" style={{ color: 'rgb(87, 8, 133)' }}>IIM</span>
+                  <span className="text-sm font-bold text-lorio">IIM</span>
                 </div>
-                <span className="text-sm font-semibold text-purple-800 cp hover:underline">Incubated by IIM Visakhapatnam</span>
+                <span className="text-sm font-semibold text-lorio cp hover:underline">Incubated by IIM Visakhapatnam</span>
               </div>
             </div>
 
@@ -129,8 +133,7 @@ const Hero = () => {
 
             {/* Main visual card */}
             <div
-              className="overflow-hidden relative rounded-3xl shadow-2xl"
-              style={{ background: 'linear-gradient(135deg, #E9D5FF 0%, #DDD6FE 50%, #E9D5FF 100%)' }}
+              className="overflow-hidden relative rounded-3xl shadow-2xl gradient-lorio"
               data-aos="zoom-in"
             >
               <div className="relative z-10 p-6">
@@ -151,10 +154,11 @@ const Hero = () => {
               {/* LinkedIn */}
               <a
                 href="https://share.google/OPUPSbEAra0DzkTYR"
-                className="flex justify-center items-center w-12 h-12 bg-white rounded-full border-2 shadow-lg transition-all hover:scale-110"
-                style={{ borderColor: 'rgba(87, 8, 133, 0.2)', cursor: 'pointer' }}
+                className="flex justify-center items-center w-12 h-12 bg-white rounded-full border-2 shadow-lg transition-all hover:scale-110 
+                "
+                style={{ borderColor: 'rgba(31, 111, 191, 0.4)', cursor: 'pointer' }}
               >
-               
+
                 <img
                   src="/assets/images/svg-icon/6.svg"
                   alt="LinkedIn"
@@ -165,9 +169,9 @@ const Hero = () => {
               <a
                 href="https://share.google/Z7JsL9kpzSaX3tnvJ"
                 className="flex justify-center items-center w-12 h-12 bg-white rounded-full border-2 shadow-lg transition-all hover:scale-110"
-                style={{ borderColor: 'rgba(87, 8, 133, 0.2)' }}
+                style={{ borderColor: 'rgba(31, 111, 191, 0.4)' }}
               >
-                
+
                 <img
                   src="/assets/images/svg-icon/2.svg"
                   alt="Facebook"
@@ -178,10 +182,10 @@ const Hero = () => {
               <a
                 href="https://www.instagram.com/lorio.__?igsh=ZXY2eGc1Z2w5NXpw"
                 className="flex justify-center items-center w-12 h-12 bg-white rounded-full border-2 shadow-lg transition-all hover:scale-110"
-                style={{ borderColor: 'rgba(87, 8, 133, 0.2)' }}
+                style={{ borderColor: 'rgba(31, 111, 191, 0.4)' }}
               >
-                
-                 <img
+
+                <img
                   src="/assets/images/svg-icon/4.svg"
                   alt="LinkedIn"
                   className="w-5 h-5"
@@ -189,10 +193,10 @@ const Hero = () => {
               </a>
             </div>
 
-            {/* PROCESS TIMELINE */}
+            {/* Process Timeline */}
             <div
-              className="hidden p-6 mt-2 rounded-2xl border-2 shadow-xl backdrop-blur-md md:block bg-white/90"
-              style={{ borderColor: 'rgba(87, 8, 133, 0.1)' }}
+              className="hidden p-6 mt-2 rounded-2xl  shadow-xl backdrop-blur-md md:block bg-white/90 "
+
               data-aos="fade-up"
               data-aos-delay="1200"
             >
@@ -203,16 +207,33 @@ const Hero = () => {
 
                 {/* Step 1 */}
                 <div
-                  className="flex relative z-10 flex-col gap-3 items-center transition-all"
+                  className="flex relative z-10 flex-col gap-3 items-center transition-all group"
                   data-aos="zoom-in"
                   data-aos-delay="1200"
                 >
-                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl border-2 shadow-lg transition-all group hover:shadow-purple-500/50 hover:-translate-y-1 cp" style={{ borderColor: 'rgba(87, 8, 133, 0.1)' }}>
-                    <svg className="w-8 h-8" style={{ color: 'rgb(87, 8, 133)' }} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  <div
+                    className="flex justify-center items-center w-16 h-16 bg-white rounded-xl 
+                      border-2 shadow-lg transition-all  hover:-translate-y-1 hover:shadow-orange-500/50 cp"
+                    style={{ borderColor: 'rgba(246, 139, 30, 0.35)' }}
+                  >
+                    <svg
+                      className="w-8 h-8 text-[#F68B1E]"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      />
                     </svg>
                   </div>
-                  <span className="text-xs font-semibold text-center text-gray-700">Trip Created</span>
+
+                  <span className="text-xs font-semibold text-center text-gray-700">
+                    Trip Created
+                  </span>
                 </div>
 
                 {/* Step 2 */}
@@ -221,9 +242,21 @@ const Hero = () => {
                   data-aos="zoom-in"
                   data-aos-delay="1300"
                 >
-                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl border-2 shadow-lg transition-all group hover:shadow-purple-500/50 hover:-translate-y-1 cp" style={{ borderColor: 'rgba(87, 8, 133, 0.1)' }}>
-                    <svg className="w-8 h-8" style={{ color: 'rgb(87, 8, 133)' }} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                  <div
+                    className="flex justify-center items-center w-16 h-16 bg-white rounded-xl  text-[#F68B1E] 
+                      border-2 shadow-lg transition-all  hover:-translate-y-1 hover:shadow-orange-500/50 cp"
+                    style={{ borderColor: 'rgba(246, 139, 30, 0.35)' }}>
+                    <svg
+                      className="w-8 h-8 text-[#F68B1E] "
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+                      />
                     </svg>
                   </div>
                   <span className="text-xs font-semibold text-center text-gray-700">Vehicle Loaded</span>
@@ -235,9 +268,19 @@ const Hero = () => {
                   data-aos="zoom-in"
                   data-aos-delay="1400"
                 >
-                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl border-2 shadow-lg transition-all group hover:shadow-purple-500/50 hover:-translate-y-1 cp" style={{ borderColor: 'rgba(87, 8, 133, 0.1)' }}>
-                    <svg className="w-8 h-8" style={{ color: 'rgb(87, 8, 133)' }} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl 
+                      border-2 shadow-lg transition-all  hover:-translate-y-1 hover:shadow-orange-500/50 cp"
+                    style={{ borderColor: 'rgba(246, 139, 30, 0.35)' }}>
+                    <svg
+                      className="w-8 h-8 text-[#F68B1E] "
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round" d="M5 13l4 4L19 7"
+                      />
                     </svg>
                   </div>
                   <span className="text-xs font-semibold text-center text-gray-700">Trip Completed</span>
@@ -249,9 +292,20 @@ const Hero = () => {
                   data-aos="zoom-in"
                   data-aos-delay="1500"
                 >
-                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl border-2 shadow-lg transition-all group hover:shadow-purple-500/50 hover:-translate-y-1 cp" style={{ borderColor: 'rgba(87, 8, 133, 0.1)' }}>
-                    <svg className="w-8 h-8" style={{ color: 'rgb(87, 8, 133)' }} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl 
+                      border-2 shadow-lg transition-all  hover:-translate-y-1 hover:shadow-orange-500/50 cp"
+                    style={{ borderColor: 'rgba(246, 139, 30, 0.35)' }}>
+                    <svg
+                      className="w-8 h-8 text-[#F68B1E] "
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
                     </svg>
                   </div>
                   <span className="text-xs font-semibold text-center text-gray-700">POD Submitted</span>
@@ -263,9 +317,16 @@ const Hero = () => {
                   data-aos="zoom-in"
                   data-aos-delay="1600"
                 >
-                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl border-2 border-green-100 shadow-lg transition-all group hover:shadow-green-500/50 hover:-translate-y-1 cp">
-                    <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  <div className="flex justify-center items-center w-16 h-16 bg-white rounded-xl border-2 border-blue-300 shadow-lg transition-all group hover:shadow-blue-500/50 hover:-translate-y-1 cp">
+                    <svg
+                      className="w-8 h-8 text-lorio"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2" viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                      />
                     </svg>
                   </div>
                   <span className="text-xs font-semibold text-center text-gray-700">Freight Received</span>
@@ -275,13 +336,14 @@ const Hero = () => {
             </div>
 
             {/* Decorative floating element */}
-            <div
-              className="absolute -right-6 -bottom-6 w-32 h-32 rounded-full blur-2xl"
-              style={{ backgroundColor: 'rgba(87, 8, 133, 0.2)' }}
+            {/* <div
+              className="absolute -right-6 -bottom-6 w-32 h-32 rounded-full blur-3xl opacity-60"
+              style={{ backgroundColor: 'rgba(31, 111, 191, 0.3)' }}
               data-aos="zoom-in"
               data-aos-delay="1700"
               data-aos-duration="5000"
-            ></div>
+            ></div> */}
+
 
           </div>
 

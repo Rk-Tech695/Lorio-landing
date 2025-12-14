@@ -31,14 +31,14 @@ const CTAFooter = () => {
   return (
     <section
       className="overflow-hidden relative pt-10 pb-5"
-      style={{
-        background:
-          "linear-gradient(135deg, #f9fafb 0%, #e5e7eb 50%, #f3e8ff 100%)",
-      }}
+     style={{
+  background:
+    "linear-gradient(135deg, #f9fafb 0%, #e5e7eb 50%, #e8f2ff 100%)",
+}}
     >
       {/* Decorative Background */}
-      <div className="absolute left-10 top-20 w-72 h-72 rounded-full blur-3xl bg-purple-200/30"></div>
-      <div className="absolute right-10 bottom-20 w-96 h-96 rounded-full blur-3xl bg-purple-300/20"></div>
+      <div className="absolute left-10 top-20 w-72 h-72 rounded-full blur-3xl bg-blue-200/30"></div>
+      <div className="absolute right-10 bottom-20 w-96 h-96 rounded-full blur-3xl bg-blue-300/20"></div>
 
       <div className="container relative z-10 px-4 mx-auto">
         {/* Header */}
@@ -48,14 +48,14 @@ const CTAFooter = () => {
           data-aos-duration="1200"
         >
           <div className="flex gap-3 justify-center items-center mb-4">
-            <div className="h-0.5 w-12" style={{ backgroundColor: "rgb(87, 8, 133)" }}></div>
+            <div className="h-0.5 w-12" style={{ backgroundColor: "#F68B1E" }}></div>
             <span
               className="text-sm font-semibold tracking-wider uppercase"
-              style={{ color: "rgb(87, 8, 133)" }}
+              style={{ color: "#F68B1E" }}
             >
               Contact Us
             </span>
-            <div className="h-0.5 w-12" style={{ backgroundColor: "rgb(87, 8, 133)" }}></div>
+            <div className="h-0.5 w-12" style={{ backgroundColor: "#F68B1E" }}></div>
           </div>
 
           <h2 className="mb-3 text-2xl font-bold text-gray-800 lg:text-5xl">
@@ -81,7 +81,7 @@ const CTAFooter = () => {
                   alt="Truck Fleet"
                   className="object-cover w-full h-full"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-900/30"></div>
+                <div className="absolute inset-0 bg-gradient-to-tfrom-blue-900/80 via-blue-900/30"></div>
 
                 <div className="absolute right-0 bottom-0 left-0 p-5">
                   <h3 className="mb-1 text-xl font-bold text-white">
@@ -101,7 +101,7 @@ const CTAFooter = () => {
                 return (
                   <div
                     key={idx}
-                    className="p-4 bg-white rounded-xl border border-gray-200 shadow-sm transition-transform duration-[900ms] ease-[cubic-bezier(.25,.46,.45,.94)] hover:translate-x-2 hover:shadow-md"
+                    className="p-4 bg-white rounded-xl border border-gray-200 shadow-sm transition-transform duration-[900ms]ease-[cubic-bezier(.25,.46,.45,.94)] hover:translate-x-2 hover:shadow-md"
                     data-aos="fade-right"
                     data-aos-duration="1200"
                     data-aos-delay={idx * 200}
@@ -116,7 +116,7 @@ const CTAFooter = () => {
                       <div>
                         <h3 className="text-gray-800 font-bold text-sm mb-0.5">{info[idx].title}</h3>
                         {idx < 2 ? (
-                          <a href={info[idx].link} className="text-lg font-semibold hover:underline" style={{ color: "rgb(87, 8, 133)" }}>
+                          <a href={info[idx].link} className="text-lg font-semibold hover:underline text-lorio" >
                             {info[idx].text}
                           </a>
                         ) : (
@@ -135,7 +135,7 @@ const CTAFooter = () => {
             data-aos="fade-left"
             data-aos-duration="1200"
             data-aos-delay="200"
-            className="transition-transform duration-[1100ms] ease-[cubic-bezier(.25,.46,.45,.94)]"
+            className="transition-transform duration-[1100ms]ease-[cubic-bezier(.25,.46,.45,.94)]"
           >
             <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-xl">
               <h3 className="mb-5 text-xl font-bold text-gray-800">Send us a Message</h3>
@@ -156,7 +156,7 @@ const CTAFooter = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all text-sm"
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all text-sm"
                     placeholder="Enter your name"
                   />
                 </div>
@@ -176,7 +176,7 @@ const CTAFooter = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all text-sm"
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all text-sm"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -196,7 +196,7 @@ const CTAFooter = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all text-sm"
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all text-sm"
                     placeholder="Enter your phone number"
                   />
                 </div>
@@ -216,7 +216,7 @@ const CTAFooter = () => {
                     onChange={handleChange}
                     required
                     rows="3"
-                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none resize-none transition-all text-sm"
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none resize-none transition-all text-sm"
                     placeholder="Tell us how we can help you..."
                   ></textarea>
                 </div>
@@ -227,8 +227,8 @@ const CTAFooter = () => {
                   data-aos="fade-left"
                   data-aos-duration="1200"
                   data-aos-delay="900"
-                  className="flex gap-2 justify-center items-center px-6 py-3 w-full font-bold text-white rounded-lg shadow-lg transition-transform duration-[1100ms] ease-[cubic-bezier(.25,.46,.45,.94)] hover:-translate-y-1"
-                  style={{ backgroundColor: "rgb(87, 8, 133)" }}
+                  className="flex gap-2 cp justify-center items-center px-6 py-3 w-full font-bold text-white rounded-lg shadow-lg transition-transform duration-[1100ms]ease-[cubic-bezier(.25,.46,.45,.94)] hover:-translate-y-1"
+                  style={{ backgroundColor: "#1F6FBF" }}
                 >
                   <Send size={18} />
                   Send Message

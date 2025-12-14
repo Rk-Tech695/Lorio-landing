@@ -71,14 +71,14 @@ function App() {
                 >
                   {/* WhatsApp Icon */}
                   <img
-                    src="/assets/images/logo/whatsapp.svg"
+                    src="/assets/images/svg-icon/whatsapp.svg"
                     alt="WhatsApp"
                     className="w-9 h-9"
                   />
 
                   {/* Pulse Animation */}
                   <motion.div
-                    className="absolute inset-0 bg-purple-100 rounded-full -z-10"
+                    className="absolute inset-0 bg-green-100 rounded-full -z-10"
                     animate={{
                       scale: [1, 1.3, 1],
                       opacity: [0.7, 0, 0.7]

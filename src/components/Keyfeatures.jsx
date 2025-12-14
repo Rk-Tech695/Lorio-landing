@@ -8,8 +8,8 @@ const Keyfeatures = () => {
       title: "Document Management",
       image: "/public-assets/img/document.png",
       alt: "Document Management",
-      bgGradient: "linear-gradient(135deg, #F8FAFC 0%, #E5E7EB 100%)",
-      badgeColor: "#6D28D9", // Deep Purple
+       bgGradient: "linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)",
+      badgeColor: "#1D4ED8",
       features: [
         "Verification from Vahan",
         "Cloud Storage Solutions",
@@ -22,8 +22,8 @@ const Keyfeatures = () => {
       title: "Driver Management",
       image: "/public-assets/img/driver.png",
       alt: "Driver Management",
-      bgGradient: "linear-gradient(135deg, #FEF7ED 0%, #FFEDD5 100%)",
-      badgeColor: "#EA580C", // Fresh Orange
+       bgGradient: "linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)",
+      badgeColor: "#1D4ED8",
       features: [
         "License & Aadhar Verification",
         "Easy Salary Calculation",
@@ -36,8 +36,8 @@ const Keyfeatures = () => {
       title: "Trip Management",
       image: "/public-assets/img/trip.png",
       alt: "Trip Management",
-      bgGradient: "linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%)",
-      badgeColor: "#059669", // Emerald Green
+       bgGradient: "linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)",
+      badgeColor: "#1D4ED8",
       features: [
         "Real-time Fleet Status",
         "Smart Communication via WhatsApp",
@@ -51,7 +51,7 @@ const Keyfeatures = () => {
       image: "/public-assets/img/tyre.png",
       alt: "Tyre Management",
       bgGradient: "linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)",
-      badgeColor: "#1D4ED8", // Royal Blue
+      badgeColor: "#1D4ED8", 
       features: [
         "Vehicle-wise Tyre Management",
         "Tyre Performance Report",
@@ -64,8 +64,8 @@ const Keyfeatures = () => {
       title: "Maintenance Management System",
       image: "/public-assets/img/maintenance.png",
       alt: "Maintenance Management",
-      bgGradient: "linear-gradient(135deg, #FEE2E2 0%, #FECACA 100%)",
-      badgeColor: "#DC2626", // Crisp Strong Red
+       bgGradient: "linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)",
+      badgeColor: "#1D4ED8", 
       features: [
         "Preventive Maintenance",
         "Breakdown Management",
@@ -78,8 +78,8 @@ const Keyfeatures = () => {
       title: "Business Insight",
       image: "/public-assets/img/insight.png",
       alt: "Business Insight",
-      bgGradient: "linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%)",
-      badgeColor: "#C2410C", // Dark Burnt Orange
+       bgGradient: "linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)",
+      badgeColor: "#1D4ED8", 
       features: [
         "Driver Performance Report",
         "Vehicle Performance Report",
@@ -104,9 +104,6 @@ const Keyfeatures = () => {
 
     >
 
-      <div className="absolute left-10 top-20 w-72 h-72 rounded-full blur-3xl bg-purple-200/30"></div>
-      <div className="absolute right-10 bottom-20 w-96 h-96 rounded-full blur-3xl bg-purple-300/20"></div>
-
       <div className="relative z-10 px-4 mx-auto max-w-7xl">
 
         {/* Header */}
@@ -116,11 +113,11 @@ const Keyfeatures = () => {
           data-aos-duration="1200"
         >
           <div className="flex gap-3 justify-center items-center mb-4">
-            <div className="h-0.5 w-12" style={{ backgroundColor: 'rgb(87, 8, 133)' }}></div>
-            <span className="text-sm font-semibold tracking-wider uppercase" style={{ color: 'rgb(87, 8, 133)' }}>
+            <div className="h-0.5 w-12" style={{ backgroundColor: '#F68B1E' }}></div>
+            <span className="text-sm font-semibold tracking-wider uppercase text-[#F68B1E]" >
               Features
             </span>
-            <div className="h-0.5 w-12" style={{ backgroundColor: 'rgb(87, 8, 133)' }}></div>
+            <div className="h-0.5 w-12" style={{ backgroundColor: '#F68B1E' }}></div>
           </div>
 
           <h2 className="mb-3 text-2xl font-bold text-gray-800 lg:text-5xl">Key Features</h2>

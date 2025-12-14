@@ -41,9 +41,17 @@ const Header = () => {
     { label: 'Home', id: 'home', icon: Home  },
     { label: 'Services', id: 'services', icon: Briefcase },
     { label: 'Features', id: 'keyfeatures', icon: Zap },
-    { label: 'Pricing', id: 'pricing', icon: IndianRupee },
+    { label: 'About', id: 'about', icon: Truck  },
     { label: 'Contact Us', id: 'contact', icon: Mail }
   ];
+
+  const handleClick = (item) =>{
+    if(item.id === 'about'){
+      window.open("https://rkinnovation.netlify.app/", "_black")
+      return
+    }
+    scrollToSection(item.id);
+  }
 
   return (
     <>
@@ -141,11 +149,12 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              style={{width: "210px"}}
             >
               <img 
-                src="/assets/images/logo/login.png" 
+                src="/assets/images/logo/logo-png-02.png" 
                 alt="Lorio Logo" 
-                className="w-auto h-12"
+               
               />
             </motion.div>
 
@@ -156,9 +165,8 @@ const Header = () => {
                 return (
                   <motion.button
                         key={index}
-                        style={{cursor : "pointer"}}
-                    onClick={() => scrollToSection(item.id)}
-                    className="relative px-6 py-2.5 text-gray-700 hover:text-white font-semibold text-base transition-all duration-300 rounded-lg group overflow-hidden"
+                    onClick={() => handleClick(item)}
+                    className="relative px-6 py-2.5 text-gray-700 cp hover:text-white font-semibold text-base transition-all duration-300 rounded-lg group overflow-hidden"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
@@ -167,14 +175,14 @@ const Header = () => {
                   >
                     {/* Background gradient on hover */}
                     <span 
-                      className="absolute inset-0 from-purple-600 to-purple-800 opacity-0 transition-opacity duration-300 bg-gradient-to-rb group-hover:opacity-100"
-                      style={{ background: 'linear-gradient(135deg, rgb(87, 8, 133) 0%, #6d28d9 100%)' }}
+                      className="absolute inset-0 from-blue-600 to-blue-800 opacity-0 transition-opacity duration-300 bg-gradient-to-rb group-hover:opacity-100"
+                      style={{ background: 'linear-gradient(135deg, #1F6FBF 0%, #1E40AF 100%)' }}
                     />
                     
                     {/* Border animation */}
                     <span 
                       className="absolute inset-0 rounded-lg border-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                      style={{ borderColor: 'rgb(87, 8, 133)' }}
+                      style={{ borderColor: '#1f6fbf' }}
                     />
                     
                     {/* Content */}
@@ -204,9 +212,9 @@ const Header = () => {
             >
               <motion.button
                 onClick={() => window.location.href = 'https://lorio.prfa.in'}
-                className="overflow-hidden relative px-8 py-3 font-bold text-white rounded-xl shadow-lg group"
-                style={{ background: 'linear-gradient(135deg, rgb(87, 8, 133) 0%, #6d28d9 100%)' , cursor : "pointer"}}
-                whileHover={{ scale: 1.08, y: -3, boxShadow: '0 20px 40px rgba(87, 8, 133, 0.4)' }}
+                className="overflow-hidden cp relative px-8 py-3 font-bold text-white rounded-xl shadow-lg group"
+                style={{ background: 'linear-gradient(135deg, #1F6FBF 0%, #1E40AF 100%)' }}
+                whileHover={{ scale: 1.08, y: -3, boxShadow: '0 20px 90px #1F6FBF' }}
                 whileTap={{ scale: 0.95 }}
               >
                 {/* Shine effect */}
@@ -247,9 +255,9 @@ const Header = () => {
                 transition={{ duration: 0.3 }}
               >
                 {isMobileMenuOpen ? (
-                  <X size={28} style={{ color: 'rgb(87, 8, 133)' }} />
+                  <X size={28} style={{ color: '#1F6FBF' }} />
                 ) : (
-                  <Menu size={28} style={{ color: 'rgb(87, 8, 133)' }} />
+                  <Menu size={28} style={{ color: '#1F6FBF' }} />
                 )}
               </motion.div>
             </motion.button>
@@ -264,7 +272,7 @@ const Header = () => {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="bg-gradient-to-b from-purple-50 to-white border-t border-purple-100 shadow-xl lg:hidden"
+              className="bg-gradient-to-b from-blue-50 to-white border-t border-blue-100 shadow-xl lg:hidden"
             >
               <div className="container px-4 py-6 mx-auto space-y-2">
                 {menuItems.map((item, index) => {
@@ -272,8 +280,9 @@ const Header = () => {
                   return (
                     <motion.button
                       key={index}
-                      onClick={() => scrollToSection(item.id)}
-                      className="flex gap-3 items-center px-4 py-3 w-full font-semibold text-left text-gray-700 rounded-xl shadow-sm transition-all hover:bg-white hover:text-purple-700 hover:shadow-md"
+                      onClick={() => handleClick(item) }
+                     
+                      className="flex gap-3 items-center px-4 py-3 w-full font-semibold text-left text-gray-700 rounded-xl shadow-sm transition-all hover:bg-white hover:text-blue-700 hover:shadow-md"
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.3, delay: index * 0.1 }}
@@ -285,7 +294,7 @@ const Header = () => {
                     >
                       <div 
                         className="flex justify-center items-center w-10 h-10 rounded-lg"
-                        style={{ backgroundColor: 'rgb(87, 8, 133)' }}
+                        style={{ backgroundColor: '#1F6FBF' }}
                       >
                         <Icon size={18} className="text-white" />
                       </div>
@@ -298,7 +307,7 @@ const Header = () => {
                 <motion.button
                   onClick={() => window.location.href = 'https://lorio.prfa.in'}
                   className="flex gap-2 justify-center items-center px-4 py-4 mt-4 w-full font-bold text-white rounded-xl shadow-lg"
-                  style={{ background: 'linear-gradient(135deg, rgb(87, 8, 133) 0%, #6d28d9 100%)' }}
+                  style={{ background: '#1F6FBF' }}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: 0.4 }}

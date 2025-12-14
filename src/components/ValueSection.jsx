@@ -1,7 +1,7 @@
 import React from 'react';
 import { TrendingUp, DollarSign, BarChart3, Zap } from 'lucide-react';
 
-const ValueSection = () => {
+const   ValueSection = () => {
   const benefits = [
     {
       title: "Reduce wastage & save up to 30% in costs",
@@ -26,10 +26,10 @@ const ValueSection = () => {
   ];
 
   const socialProofStats = [
-    { number: "1300+", label: "Trucks Digitally Managed", color: "text-blue-600" },
-    { number: "130+", label: "Fleet Owners Already Onboard", color: "text-green-600" },
-    { number: "20–30%", label: "Average Cost Reduction", color: "text-purple-600" },
-    { number: "89%", label: "Positive Feedback", color: "text-orange-600" }
+    { number: "1300+", label: "Trucks Digitally Managed", color: "text-[#1F6FBF]" },
+    { number: "130+", label: "Fleet Owners Already Onboard", color: "text-[#F68B1E]" },
+    { number: "20–30%", label: "Average Cost Reduction", color: "text-[#1F6FBF]" },
+    { number: "89%", label: "Positive Feedback", color: "text-[#F68B1E]" }
   ];
 
   return (
@@ -50,10 +50,10 @@ const ValueSection = () => {
           <div className="flex gap-3 justify-center items-center mb-4"
             data-aos="fade-up"
             data-aos-delay="200">
-            <div className="h-0.5 w-12" style={{ backgroundColor: 'rgb(87, 8, 133)' }}></div>
-            <span className="text-sm font-semibold tracking-wider uppercase"
-              style={{ color: 'rgb(87, 8, 133)' }}>Why Choose Lorio</span>
-            <div className="h-0.5 w-12" style={{ backgroundColor: 'rgb(87, 8, 133)' }}></div>
+            <div className="h-0.5 w-12" style={{ backgroundColor: '#F68B1E' }}></div>
+            <span className="text-sm font-semibold tracking-wider uppercase text-[#F68B1E]"
+              >Why Choose Lorio</span>
+            <div className="h-0.5 w-12" style={{ backgroundColor: '#F68B1E' }}></div>
           </div>
 
           <h2 className="mb-4 text-2xl font-bold text-gray-800 lg:text-5xl"
@@ -79,7 +79,7 @@ const ValueSection = () => {
                   <div
                     className="flex justify-center items-center w-14 h-14 rounded-xl shrink-0 transition-transform duration-[1200ms]  group-hover:rotate-[360deg]"
                     style={{ 
-                      backgroundColor: 'rgb(87, 8, 133)',
+                      backgroundColor: '#1F6FBF',
                       
                     }}
                   >
@@ -108,7 +108,7 @@ const ValueSection = () => {
               data-aos-delay="1200">
               <span className="text-gray-800">Proven. </span>
               <span className="text-gray-800">Trusted. </span>
-              <span style={{ color: 'rgb(87, 8, 133)' }}>Growing.</span>
+              <span style={{ color: '#F68B1E' }}>Growing.</span>
             </h2>
 
             <p className="text-sm text-gray-600 md:text-lg"
@@ -135,10 +135,9 @@ const ValueSection = () => {
                   <div className="mx-auto w-20 h-1 rounded-full"
                     style={{
                       backgroundColor:
-                        stat.color.includes('blue') ? '#2563eb' :
-                        stat.color.includes('green') ? '#16a34a' :
-                        stat.color.includes('purple') ? 'rgb(87, 8, 133)' :
-                        '#ea580c'
+                        stat.color.includes('[#1F6FBF]') ? '#1F6FBF' :
+                        stat.color.includes('[#F68B1E]') ? '#F68B1E' :
+                        '#1F6FBF'
                     }}></div>
                 </div>
                 <p className="text-gray-700 font-medium text-[12px] md:text-base">
