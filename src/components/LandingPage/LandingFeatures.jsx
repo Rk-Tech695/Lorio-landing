@@ -208,8 +208,8 @@ const LandingFeatures = () => {
                         {feature.description}
                       </p>
                       <div>
-                        <h6 className="font-bold mb-2 text-gray-800 text-xs uppercase">
-                          Key Benefits:
+                        <h6 className="font-bold mb-2 text-lorio text-xs uppercase">
+                          Key Benefits :
                         </h6>
                         <ul className="mb-0">
                           {feature.benefits.map((benefit, index) => (
