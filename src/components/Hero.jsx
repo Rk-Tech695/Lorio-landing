@@ -372,7 +372,7 @@ const Hero = () => {
             <div className="inset-1 fixed bg-black/70 flex items-center justify-center z-20">
               <div>
 
-                <div className="rounded-xl p-4 w-[90%] max-w-2xl relative">
+                <div className="rounded-xl p-4 w-[75%]  relative m-auto top-10">
                   <div>
                     <button >
                       <X onClick={() => setOpen(false)}
