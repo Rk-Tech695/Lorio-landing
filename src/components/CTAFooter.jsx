@@ -88,7 +88,7 @@ const CTAFooter = () => {
                     Ready to Transform Your Fleet?
                   </h3>
                   <p className="text-sm text-white/90">
-                    Join 1300+ trucks already digitally managed with Lorio
+                    Join 2000+ trucks already digitally managed with Lorio
                   </p>
                 </div>
               </div>

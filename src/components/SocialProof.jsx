@@ -3,13 +3,13 @@ import React from 'react';
 const SocialProof = () => {
   const stats = [
     {
-      number: "1300+",
+      number: "2000+",
       label: "Trucks Digitally Managed",
       color: "text-blue-600",
       bgColor: "bg-blue-50"
     },
     {
-      number: "130+",
+      number: "180+",
       label: "Fleet Owners Already Onboard",
       color: "text-green-600",
       bgColor: "bg-green-50"
