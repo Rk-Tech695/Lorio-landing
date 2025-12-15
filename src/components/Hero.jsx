@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { RocketIcon } from '../components/Icons';
-import { LayoutGridIcon } from 'lucide-react';
+import { LayoutGridIcon, PlayCircle, X } from 'lucide-react';
 
 const Hero = () => {
+
+  const [open, setOpen] = useState(false);
+
   return (
     <section
       className="flex overflow-hidden relative items-center pt-5 pb-10 min-h-screen"
@@ -73,28 +76,42 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div
               className="flex flex-col gap-4 sm:flex-row sm:items-center"
-              data-aos="fade-up"
-              data-aos-delay="500"
+            // data-aos="fade-up"
+            // data-aos-delay="500"
             >
               <a
                 href="https://app.lorio.in"
-                className="inline-flex items-center justify-center gap-3 text-white font-bold p-2 md:py-4 md:px-8 rounded-xl text-[14px] sm:text-lg shadow-xl transition-all hover:scale-105"
+                className="inline-flex whitespace-nowrap items-center justify-center gap-3 text-white font-bold p-2 md:py-5 md:px-8 rounded-xl text-[14px] sm:text-[16px] shadow-xl transition-all hover:scale-105"
                 style={{ background: 'linear-gradient(135deg, #1F6FBF 0%, #1E40AF 100%)' }}
-                data-aos="zoom-in"
+                data-aos="fade-up"
+                data-aos-delay="100"
+
               >
                 <RocketIcon className="w-6 h-6" />
-                Get started now
+                Get started
               </a>
 
               <a
+                // href="public/assets/video/Lorio-demo.mp4"
+                className="cp inline-flex whitespace-nowrap  items-center justify-center gap-3 font-semibold p-2 md:py-5 md:px-5 rounded-xl  border-2 bg-white text-orange hover:scale-101 transition-all"
+                onClick={() => setOpen(true)}
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
+                <PlayCircle className="w-6 h-6" />
+                Watch Demo
+              </a>
+
+
+
+              <a
                 href="https://play.google.com/store/search?q=lorio&c=apps&hl=en_IN"
-                className="inline-flex items-center justify-center gap-3 font-semibold p-2 md:py-4 md:px-8 rounded-xl text-[14px] sm:text-lg border-2 bg-white text-lorio hover:scale-101 transition-all"
-                style={{ borderColor: '#1F6FBF' }}
-                data-aos="zoom-in"
-                data-aos-delay="100"
+                className="inline-flex items-center whitespace-nowrap justify-center gap-3 font-semibold p-2 md:py-5 md:px-5 rounded-xl text-[14px] sm:text-[16px] border-2 text-lorio bg-white text-lorio hover:scale-101 transition-all"
+                data-aos="fade-up"
+                data-aos-delay="200"
               >
                 <LayoutGridIcon className="w-6 h-6 ]" />
-                Get mobile App
+                Download App
               </a>
             </div>
 
@@ -118,7 +135,7 @@ const Hero = () => {
           <div
             className="relative"
             data-aos="fade-left"
-            data-aos-delay="300"
+            data-aos-delay="250"
           >
 
             {/* Rotating Ring Container (Non-motion now static) */}
@@ -148,8 +165,7 @@ const Hero = () => {
             {/* Floating social icons */}
             <div
               className="absolute right-4 top-1/2 z-50 space-y-3 -translate-y-1/2"
-              data-aos="fade-left"
-              data-aos-delay="800"
+
             >
               {/* LinkedIn */}
               <a
@@ -157,6 +173,8 @@ const Hero = () => {
                 className="flex justify-center items-center w-12 h-12 bg-white rounded-full border-2 shadow-lg transition-all hover:scale-110 
                 "
                 style={{ borderColor: 'rgba(31, 111, 191, 0.4)', cursor: 'pointer' }}
+                data-aos="fade-up"
+                data-aos-delay="700"
               >
 
                 <img
@@ -170,6 +188,8 @@ const Hero = () => {
                 href="https://share.google/Z7JsL9kpzSaX3tnvJ"
                 className="flex justify-center items-center w-12 h-12 bg-white rounded-full border-2 shadow-lg transition-all hover:scale-110"
                 style={{ borderColor: 'rgba(31, 111, 191, 0.4)' }}
+                data-aos="fade-up"
+                data-aos-delay="750"
               >
 
                 <img
@@ -183,6 +203,8 @@ const Hero = () => {
                 href="https://www.instagram.com/lorio.__?igsh=ZXY2eGc1Z2w5NXpw"
                 className="flex justify-center items-center w-12 h-12 bg-white rounded-full border-2 shadow-lg transition-all hover:scale-110"
                 style={{ borderColor: 'rgba(31, 111, 191, 0.4)' }}
+                data-aos="fade-up"
+                data-aos-delay="800"
               >
 
                 <img
@@ -334,7 +356,6 @@ const Hero = () => {
 
               </div>
             </div>
-
             {/* Decorative floating element */}
             {/* <div
               className="absolute -right-6 -bottom-6 w-32 h-32 rounded-full blur-3xl opacity-60"
@@ -344,8 +365,34 @@ const Hero = () => {
               data-aos-duration="5000"
             ></div> */}
 
-
           </div>
+
+          {/* Open Video in model */}
+          {open && (
+            <div className="inset-1 fixed bg-black/70 flex items-center justify-center z-20">
+              <div>
+
+                <div className="rounded-xl p-4 w-[90%] max-w-2xl relative">
+                  <div>
+                    <button >
+                      <X onClick={() => setOpen(false)}
+                        className="absolute top-3 right-3 cp text-red-500" />
+                    </button>
+
+                    <video
+                      className="w-full rounded-lg"
+                      controls
+                      autoPlay
+                    >
+                      <source src="public/assets/video/Lorio-demo.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          )}
 
         </div>
       </div>

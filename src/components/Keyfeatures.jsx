@@ -104,7 +104,7 @@ const Keyfeatures = () => {
 
     >
 
-      <div className="relative z-10 px-4 mx-auto max-w-7xl">
+      <div className="relative  px-4 mx-auto max-w-7xl">
 
         {/* Header */}
         <div

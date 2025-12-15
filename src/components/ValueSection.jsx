@@ -38,7 +38,7 @@ const   ValueSection = () => {
          backgroundImage: 'url("/assets/images/transparent/bg-pattarn.jpg")' }}
       >
       
-      <div className="container relative z-10 px-4 mx-auto">
+      <div className="container relative px-4 mx-auto">
         
       
         {/* Header */}

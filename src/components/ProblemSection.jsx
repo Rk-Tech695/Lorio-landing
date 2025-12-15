@@ -56,7 +56,7 @@ const ProblemSection = () => {
       <div className="absolute left-10 top-20 w-72 h-72 rounded-full blur-3xl bg-orange-100/30"></div>
       <div className="absolute right-10 bottom-20 w-96 h-96 rounded-full blur-3xl bg-orange-200/20"></div>
       
-      <div className="container relative z-10 px-4 mx-auto max-w-7xl">
+      <div className="container relative  px-4 mx-auto max-w-7xl">
 
         {/* Header */}
         <div

@@ -143,7 +143,7 @@ const TestimonialsSection = () => {
         }}
       />
 
-      <div className="container relative z-10 px-4 mx-auto max-w-7xl">
+      <div className="container relative px-4 mx-auto max-w-7xl">
         <motion.div
           className="mb-4 text-center md:mb-12"
           initial={{ opacity: 0, y: 30 }}

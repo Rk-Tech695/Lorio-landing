@@ -40,7 +40,7 @@ const CTAFooter = () => {
       <div className="absolute left-10 top-20 w-72 h-72 rounded-full blur-3xl bg-blue-200/30"></div>
       <div className="absolute right-10 bottom-20 w-96 h-96 rounded-full blur-3xl bg-blue-300/20"></div>
 
-      <div className="container relative z-10 px-4 mx-auto">
+      <div className="container relative  px-4 mx-auto">
         {/* Header */}
         <div
           className="mb-4 text-center md:mb-12"
