@@ -384,7 +384,7 @@ const Hero = () => {
                       controls
                       autoPlay
                     >
-                      <source src="public/assets/video/Lorio-demo.mp4" type="video/mp4" />
+                      <source src="/assets/video/Lorio-demo.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>
