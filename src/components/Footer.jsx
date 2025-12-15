@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="w-full">
       <div className="flex flex-col gap-6 justify-between items-center px-4 py-4 mx-auto max-w-7xl text-sm text-gray-700 md:flex-row">
         {/* Logo left */}
-        <div className="flex items-center gap-2 w-[200px] absolute"  >
+        <div className="flex items-center justify-center gap-2 " style={{width: "200px", height:"20px"}}  >
           <img src="/assets/images/logo/logo-png-02.png" alt="Lorio Logo" className="w-36 h-32" />
         </div>
 
