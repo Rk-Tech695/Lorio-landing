@@ -107,5 +107,5 @@ body {
     rgba(246, 139, 30, 0.85) 100%
   );
   box-shadow: 0 12px 25px rgba(246, 139, 30, 0.45);
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
 }

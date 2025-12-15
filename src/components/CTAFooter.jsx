@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Send, } from "lucide-react";
 
 const CTAFooter = () => {
   const [formData, setFormData] = useState({
@@ -10,9 +10,23 @@ const CTAFooter = () => {
   });
 
   const info = [
-    { title: "Call Us", text: "+91-8518021111", link: "tel:8518021111", img : <img src="/assets/images/contact/call.gif"/> },
-    { title: "Email Us", text: "support@lorio.in", link: "mailto:support@lorio.in", img : <img src="/assets/images/contact/message.gif"/> },
-    { title: "Location", text: "5th Floor, Currency Tower, Raipur, Chhattisgarh, 492001", img : <img src="/assets/images/contact/map.gif"/> }
+    {
+      title: "Call Us",
+      text: "+91-8518021111",
+      link: "tel:8518021111",
+      img: <Phone />
+    },
+    {
+      title: "Email Us",
+      text: "support@lorio.in",
+      link: "mailto:support@lorio.in",
+      img: <Mail/>
+    },
+    {
+      title: "Location",
+      text: "5th Floor, Currency Tower, Raipur, Chhattisgarh, 492001",
+      img: <MapPin />
+    }
   ];
 
   const handleChange = (e) => {
@@ -31,10 +45,10 @@ const CTAFooter = () => {
   return (
     <section
       className="overflow-hidden relative pt-10 pb-5"
-     style={{
-  background:
-    "linear-gradient(135deg, #f9fafb 0%, #e5e7eb 50%, #e8f2ff 100%)",
-}}
+      style={{
+        background:
+          "linear-gradient(135deg, #f9fafb 0%, #e5e7eb 50%, #e8f2ff 100%)",
+      }}
     >
       {/* Decorative Background */}
       <div className="absolute left-10 top-20 w-72 h-72 rounded-full blur-3xl bg-blue-200/30"></div>
@@ -81,7 +95,7 @@ const CTAFooter = () => {
                   alt="Truck Fleet"
                   className="object-cover w-full h-full"
                 />
-                <div className="absolute inset-0 bg-gradient-to-tfrom-blue-900/80 via-blue-900/30"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/30"></div>
 
                 <div className="absolute right-0 bottom-0 left-0 p-5">
                   <h3 className="mb-1 text-xl font-bold text-white">
@@ -108,8 +122,8 @@ const CTAFooter = () => {
                   >
                     <div className="flex gap-3 items-center">
                       <div
-                        className="flex justify-center items-center w-12 h-12 rounded-lg shrink-0"
-                        style={{ backgroundColor: "rgb(87, 8, 133)" }}
+                        className="flex justify-center items-center w-12 h-12  rounded-lg shrink-0 btn-lorio"
+                        
                       >
                         {info[idx].img}
                       </div>
@@ -227,8 +241,8 @@ const CTAFooter = () => {
                   data-aos="fade-left"
                   data-aos-duration="1200"
                   data-aos-delay="900"
-                  className="flex gap-2 cp justify-center items-center px-6 py-3 w-full font-bold text-white rounded-lg shadow-lg transition-transform duration-[1100ms]ease-[cubic-bezier(.25,.46,.45,.94)] hover:-translate-y-1"
-                  style={{ backgroundColor: "#1F6FBF" }}
+                  className="flex gap-2 cp justify-center items-center px-6 py-3 w-full font-bold text-white rounded-lg shadow-lg transition-transform duration-[1100ms]ease-[cubic-bezier(.25,.46,.45,.94)]  btn-lorio"
+                  
                 >
                   <Send size={18} />
                   Send Message

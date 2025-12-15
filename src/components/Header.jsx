@@ -166,7 +166,7 @@ const Header = () => {
                   <motion.button
                         key={index}
                     onClick={() => handleClick(item)}
-                    className="relative px-6 py-2.5 text-gray-700 cp hover:text-white font-semibold text-base transition-all duration-300 rounded-lg group overflow-hidden"
+                    className="relative whitespace-nowrap px-6 py-2.5 text-gray-700 cp hover:text-white font-semibold text-base transition-all duration-300 rounded-lg group overflow-hidden"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
@@ -214,7 +214,7 @@ const Header = () => {
                 onClick={() => window.location.href = 'https://lorio.prfa.in'}
                 className="overflow-hidden cp relative px-8 py-3 font-bold text-white rounded-xl shadow-lg group"
                 style={{ background: 'linear-gradient(135deg, #1F6FBF 0%, #1E40AF 100%)' }}
-                whileHover={{ scale: 1.08, y: -3, boxShadow: '0 20px 90px #1F6FBF' }}
+                whileHover={{ scale: 1.08, boxShadow: '0 0px 15px rgba(31, 111, 191, 0.5)' }}
                 whileTap={{ scale: 0.95 }}
               >
                 {/* Shine effect */}
