@@ -26,8 +26,8 @@ const   ValueSection = () => {
   ];
 
   const socialProofStats = [
-    { number: "1300+", label: "Trucks Digitally Managed", color: "text-[#1F6FBF]" },
-    { number: "130+", label: "Fleet Owners Already Onboard", color: "text-[#F68B1E]" },
+    { number: "2000+", label: "Trucks Digitally Managed", color: "text-[#1F6FBF]" },
+    { number: "180+", label: "Fleet Owners Already Onboard", color: "text-[#F68B1E]" },
     { number: "20–30%", label: "Average Cost Reduction", color: "text-[#1F6FBF]" },
     { number: "89%", label: "Positive Feedback", color: "text-[#F68B1E]" }
   ];

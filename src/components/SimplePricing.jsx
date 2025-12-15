@@ -75,11 +75,11 @@ const SimplePricing = () => {
               >
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
-                    <div className="text-sm md:text-3xl font-bold text-white">1300+</div>
+                    <div className="text-sm md:text-3xl font-bold text-white">2000+</div>
                     <div className="text-xs text-white/80 mt-1">Active Trucks</div>
                   </div>
                   <div>
-                    <div className="text-sm md:text-3xl font-bold text-white">130+</div>
+                    <div className="text-sm md:text-3xl font-bold text-white">180+</div>
                     <div className="text-xs text-white/80 mt-1">Fleet Owners</div>
                   </div>
                   <div>
