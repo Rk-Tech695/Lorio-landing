@@ -39,8 +39,8 @@ const Header = () => {
 
   const menuItems = [
     { label: 'Home', id: 'home', icon: Home  },
-    { label: 'Services', id: 'services', icon: Briefcase },
     { label: 'Features', id: 'keyfeatures', icon: Zap },
+    { label: 'Services', id: 'services', icon: Briefcase },
     { label: 'About', id: 'about', icon: Truck  },
     { label: 'Contact Us', id: 'contact', icon: Mail }
   ];

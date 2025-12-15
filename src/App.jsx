@@ -71,7 +71,7 @@ function App() {
                 >
                   {/* WhatsApp Icon */}
                   <img
-                    src="/assets/images/svg-icon/whatsapp.svg"
+                    src="/assets/images/svg-icon/whatsapp.png"
                     alt="WhatsApp"
                     className="w-9 h-9"
                   />
