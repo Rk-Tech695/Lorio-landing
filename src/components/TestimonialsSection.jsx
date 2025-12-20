@@ -108,7 +108,6 @@ const TestimonialsSection = () => {
     autoplaySpeed: 3000,
     pauseOnHover: true,
     arrows: false,
-    centerMode: true,
     swipeToSlide: true,
 
     responsive: [
@@ -122,6 +121,7 @@ const TestimonialsSection = () => {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          centerMode: true,
           centerPadding: "0px",
         },
       },
@@ -129,6 +129,7 @@ const TestimonialsSection = () => {
         breakpoint: 425,
         settings: {
           slidesToShow: 1,
+          centerMode: true,
           centerPadding: "0px",
         },
       },
@@ -212,13 +213,13 @@ const TestimonialsSection = () => {
                     <div className="flex  relative flex-col p-6 h-full bg-white rounded-xl border border-gray-200 shadow-md transition-all duration-300 hover:shadow-lg">
 
                       {/* Side image */}
-                      <div className="absolute top-0 right-0 rounded-xl w-20" >
-                        <img
-                          src="/assets/images/banner-right-2.png"
-                          alt=""
-                          className="pointer-events-none select-none"
-                        />
-                      </div>
+                     <div className="absolute top-0 right-0 rounded-xl w-20" >
+                       <img
+                        src="/assets/images/banner-right-2.png"
+                        alt=""
+                        className="pointer-events-none select-none"
+                      />
+                     </div>
 
                       <div className="mb-4">
 

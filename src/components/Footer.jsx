@@ -18,7 +18,7 @@ const Footer = () => {
             <ul className="flex flex-row gap-4 md:gap-6">
               <li><a href="#" className="transition hover:text-[#1F6FBF]">Home</a></li>
               <li><a href="#keyfeatures" className="transition hover:text-[#1F6FBF]">Features</a></li>
-              <li><a href="https://rkinnovation.netlify.app/" target="_blank" rel="noopener noreferrer" className="transition hover:text-[#1F6FBF]">About</a></li>
+              <li><a href="https://rkinnovations.in/" target="_blank" rel="noopener noreferrer" className="transition hover:text-[#1F6FBF]">About</a></li>
               <li><a href="#contact" className="transition hover:text-[#1F6FBF]">Contact</a></li>
             </ul>
           </div>

@@ -47,7 +47,7 @@ const Header = () => {
 
   const handleClick = (item) =>{
     if(item.id === 'about'){
-      window.open("https://rkinnovation.netlify.app/", "_black")
+      window.open("https://rkinnovations.in/", "_black")
       return
     }
     scrollToSection(item.id);
